@@ -10,7 +10,7 @@ const StoryTellingSection = () => {
       <Row className="wrapper">
         <Col className="text-area" span={6}>
           <Row>
-            <Col className="title" span={24}>
+            <Col className="title gold-color" span={24}>
               Our Story
             </Col>
             <Col className="sub-title" span={24}>

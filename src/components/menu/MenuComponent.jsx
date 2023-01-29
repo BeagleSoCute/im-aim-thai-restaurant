@@ -55,7 +55,7 @@ const MenuComponent = ({ foodData, types }) => {
                           <Col className="menu-name" span={12}>
                             {item.name}
                           </Col>
-                          <Col className="menu-price" span={12}>
+                          <Col className="menu-price gold-color" span={12}>
                             ${item.price}
                           </Col>
                           <Col className="menu-description" span={24}>
@@ -124,7 +124,6 @@ const StyledDiv = styled.div`
           font-size: 18px;
         }
         .menu-price {
-          color: #e4c950;
           text-align: end;
         }
       }

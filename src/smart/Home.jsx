@@ -6,7 +6,9 @@ import SpecialMenu from "components/home/SpecialMenu";
 import MenuComponent from "components/menu/MenuComponent";
 import ChefInfo from "components/home/ChefInfo";
 import { foodMenu, menuTypes } from "data/menu";
-import {strengthData} from "data/common";
+import { strengthData } from "data/common";
+import ReviewSection from "components/home/ReviewSection";
+import { staffs } from "data/personal";
 
 const Home = () => {
   return (
@@ -27,7 +29,10 @@ const Home = () => {
         <MenuComponent foodData={foodMenu} types={menuTypes} />
       </div>
       <div className="other-section">
-        <ChefInfo strengthData={strengthData} />
+        <ChefInfo staffsData={staffs} strengthData={strengthData} />
+      </div>
+      <div className="other-section">
+        <ReviewSection />
       </div>
     </StyledDiv>
   );

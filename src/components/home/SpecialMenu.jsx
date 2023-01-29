@@ -12,8 +12,8 @@ const SpecialMenu = () => {
         </Col>
         <Col span={12} className="text-area">
           <Row>
-            <Col span={24} className="sub-title">
-              Special Dish
+            <Col span={24} className="mini-title">
+            SPECIAL DISH
             </Col>
             <Col span={24} className="title">
               Pad kra pao

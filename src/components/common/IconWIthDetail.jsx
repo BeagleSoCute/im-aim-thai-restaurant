@@ -33,6 +33,7 @@ const IconWithDetails = ({data}) => {
 
 const StyledDiv = styled.div`
   &.icon-with-details {
+    text-align: center;
     .icon-with-details-wrapper {
       justify-content: center;
     }
