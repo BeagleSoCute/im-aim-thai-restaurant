@@ -25,9 +25,9 @@ const Register = () => {
 };
 
 const StyledDiv = styled.div`
-  &.login {
+  &.register {
     height: 100vh;
-    .form-warpper {
+    .form-wrapper {
       margin-top: 150px !important;
       display: block;
       padding: 20px;

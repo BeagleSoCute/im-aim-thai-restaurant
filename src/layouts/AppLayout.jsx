@@ -49,7 +49,9 @@ const AppLayout = () => {
             <Spin size="large">{loading}</Spin>
           </div>
         ) : (
-          <><Outlet /></>
+          <>
+            <Outlet />
+          </>
         )}
       </div>
     </StyledLayout>
@@ -58,10 +60,9 @@ const AppLayout = () => {
 
 const StyledLayout = styled(Layout)`
   &.app-layout {
-    height: 100vh;
+    height: 100%;
     .content {
       height: 100%;
-      padding: 20px;
     }
     .spin {
       display: flex;

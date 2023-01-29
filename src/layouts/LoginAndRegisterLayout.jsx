@@ -7,7 +7,7 @@ const LoginAndRegisterLayout = () => {
     <StyledDiv className="login-and-register-layout">
       <Row>
         <Col span={8} />
-        <Col className="form-warpper" span={8}>
+        <Col className="form-wrapper" span={8}>
           <Outlet />
         </Col>
         <Col span={8} />
@@ -17,12 +17,14 @@ const LoginAndRegisterLayout = () => {
 };
 const StyledDiv = styled.div`
   &.login-and-register-layout {
-    height: 100vh;
-    .form-warpper {
+    .form-wrapper {
       margin-top: 150px !important;
       display: block;
       padding: 20px;
       margin: auto;
+      img-section {
+        padding: 0px!important;
+      }
       h1 {
         text-align: center;
       }

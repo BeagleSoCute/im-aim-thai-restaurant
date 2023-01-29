@@ -1,5 +1,6 @@
 import { createBrowserRouter, redirect } from "react-router-dom";
 import AppLayout from "layouts/AppLayout";
+import Home from "smart/Home";
 import Login from "smart/Login";
 import Register from "smart/Register";
 import Dashboard from "smart/Dashboard";
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
     ),
     //   errorElement: <ErrorPage />,
     children: [
+      { path: "/", element: <Home /> },
       { path: "/logout", element: <Logout /> },
       {
         path: "/dashboard",
