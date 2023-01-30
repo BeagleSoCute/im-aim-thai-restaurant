@@ -6,7 +6,7 @@ import PicWithDetails from "components/common/PicWithDetails";
 
 const ChefInfo = ({ strengthData, staffsData }) => {
   return (
-    <StyledDiv bgImg={pic} className="chef-info">
+    <StyledDiv bgImg={pic} className="chef-info bg-original-color">
       <Row className="layout-wrapper strength-section">
         <Col className="title" span={24}>
           <div className="mini-title"> WHY CHOOSE US</div>
@@ -44,7 +44,6 @@ const StyledDiv = styled.div`
         // background-color: green;
         padding: 50px;
         min-height: 100vh;
-        background-color: #100e09;
         url(${(props) => props.bgImg});
         .layout-wrapper{
             .title{

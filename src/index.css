@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  word-wrap: break-word;
+
 }
 
 code {
@@ -36,4 +38,12 @@ img{
   font-size: 12px;
   color: #e4c950;
   font-weight: bold;
+}
+
+.bg-original-color{
+  background-color: #100e09;
+}
+
+.title{
+  font-size: 35px;
 }

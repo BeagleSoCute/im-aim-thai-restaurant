@@ -5,9 +5,10 @@ import StoryTellingSection from "components/home/StoryTellingSection";
 import SpecialMenu from "components/home/SpecialMenu";
 import MenuComponent from "components/menu/MenuComponent";
 import ChefInfo from "components/home/ChefInfo";
-import { foodMenu, menuTypes } from "data/menu";
-import { strengthData } from "data/common";
 import ReviewSection from "components/home/ReviewSection";
+import ContactSection from "components/home/ContactSection";
+import { foodMenu, menuTypes } from "data/menu";
+import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
 
 const Home = () => {
@@ -33,6 +34,9 @@ const Home = () => {
       </div>
       <div className="other-section">
         <ReviewSection />
+      </div>
+      <div className="other-section">
+        <ContactSection contactDetails={contactDetails} />
       </div>
     </StyledDiv>
   );

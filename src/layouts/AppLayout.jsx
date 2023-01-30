@@ -53,6 +53,12 @@ const AppLayout = () => {
             <Outlet />
           </>
         )}
+        <div className="footer">
+          <p>
+          © 2023 IM-AIM Thai Restaurt. All Rights Reserved | Developed by
+          Tanawat Limsakul
+          </p>
+        </div>
       </div>
     </StyledLayout>
   );
@@ -76,6 +82,15 @@ const StyledLayout = styled(Layout)`
       background: #282a3a;
       .link {
         color: white;
+      }
+    }
+    .footer {
+      display:flex;
+      justify-content: center;
+      height: 50px;
+      background-color: black;
+      p{
+        margin: auto 0px;
       }
     }
   }

@@ -2,4 +2,7 @@
 <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/dish" title="dish icons">Dish icons created by Flat Icons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/family" title="family icons">Family icons created by Freepik - Flaticon</a>
-
+<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by justicon - Flaticon</a>
