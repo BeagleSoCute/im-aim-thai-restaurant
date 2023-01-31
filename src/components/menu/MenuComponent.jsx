@@ -2,22 +2,20 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Row, Col, Image } from "antd";
 import backgroundPic from "assets/background/gray_background.jpg";
+import { useNavigate } from "react-router-dom";
 
-const MenuComponent = ({ foodData, types }) => {
-  const [displayMenu, setDisplayMenu] = useState(foodData);
-  const [isSelectedType, setSelectedType] = useState("all");
-  const handleChange = (inputType) => {
-    let result = [];
-    if (inputType !== "all") {
-      result = foodData.filter((item) => item.type === inputType);
-    } else {
-      result = foodData;
-    }
-    setSelectedType(inputType);
-    setDisplayMenu(result);
-  };
+const MenuComponent = ({
+  displayMenu,
+  types,
+  isSelectedType,
+  handleChange,
+}) => {
+  const navigate = useNavigate();
   return (
-    <StyledDiv bgImg={backgroundPic} className="menu-component background-img-styled">
+    <StyledDiv
+      bgImg={backgroundPic}
+      className="menu-component background-img-styled"
+    >
       <Row className="layout-wrapper">
         <Col span={4}></Col>
         <Col span={16}>
@@ -45,7 +43,7 @@ const MenuComponent = ({ foodData, types }) => {
             <Col className="menu-section" span={24}>
               <Row className="menu-wrapper">
                 {displayMenu.map((item) => (
-                  <Col key={item.key} className="menu-content" span={12}>
+                  <Col onClick={() => navigate('/')} key={item.key} className="menu-content" span={12}>
                     <Row>
                       <Col span={6} className="menu-picture">
                         <Image src={item.pic} />
@@ -110,6 +108,7 @@ const StyledDiv = styled.div`
     .menu-section {
       //   background-color: orange;
       .menu-content {
+        cursor: pointer;
         margin-bottom: 45px;
       }
       .menu-description-section {

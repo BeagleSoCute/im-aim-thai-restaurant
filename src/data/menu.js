@@ -74,13 +74,57 @@ export const foodMenu = [
 ];
 
 export const menuTypes = [
+  {
+    id: 2,
+    type: "soup",
+    label: "Soup",
+    picPath: require("assets/menu_types/tom_yum.jpg"),
+  },
+  {
+    id: 3,
+    type: "curry",
+    label: "Curry",
+    picPath: require("assets/menu_types/green_curry.jpg"),
+  },
+  {
+    id: 4,
+    type: "wok",
+    label: "Wok",
+    picPath: require("assets/menu_types/wok.jpg"),
+  },
+  {
+    id: 5,
+    type: "salad",
+    label: "Thai Salad",
+    picPath: require("assets/menu_types/sizzling.jpg"),
+  },
+  {
+    id: 6,
+    type: "sizzling",
+    label: "Sizzling",
+    picPath: require("assets/menu_types/sizzling.jpg"),
+  },
+  {
+    id: 7,
+    type: "riceAndNoodle",
+    label: "Rice & Noodle",
+    picPath: require("assets/menu_types/pad_thai.jpg"),
+  },
+  {
+    id: 8,
+    type: "appetizers",
+    label: "Appetizers",
+    picPath: require("assets//menu_types/thai_salad.jpg"),
+  },
+  {
+    id: 9,
+    type: "dessert",
+    label: "Dessert",
+    picPath: require("assets//menu_types/icecream.jpg"),
+  },
+];
+
+export const showMenuTypes = [
   { id: 1, type: "all", label: "All" },
-  { id: 2, type: "soup", label: "Soup" },
-  { id: 3, type: "curry", label: "Curry" },
-  { id: 4, type: "wok", label: "Wok" },
-  { id: 5, type: "salad", label: "Thai Salad" },
-  { id: 6, type: "sizzling", label: "Sizzling" },
-  { id: 7, type: "riceAndNoodle", label: "Rice & Noodle" },
-  { id: 8, type: "appetizers", label: "Appetizers" },
-  { id: 9, type: "dessert", label: "Dessert" },
+  ...menuTypes,
 ];

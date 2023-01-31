@@ -11,7 +11,7 @@ import { AppProvider } from "contexts/app.context";
 import LoginAndRegisterLayout from "layouts/LoginAndRegisterLayout";
 import { checkIsAuth } from "helpers/auth.helper";
 import { notification } from "helpers/notification.helper";
-
+import FoodDetails from "smart/FoodDetails";
 import PrivateRoute from "smart/PrivateRoute";
 
 export const router = createBrowserRouter([
@@ -33,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/user/:userId",
         element: <ShowUserDetails />,
+      },
+      {
+        path: "/menu-details/:menuId",
+        element: <FoodDetails />,
       },
       {
         element: <LoginAndRegisterLayout />,

@@ -2,23 +2,20 @@ import styled from "styled-components";
 import { Card, Button } from "antd";
 const { Meta } = Card;
 
-const CardMenu = ({title, redirectPath, picPath}) => {
+const CardMenu = ({ title, handleChange, picPath }) => {
   return (
     <StyledDiv className="card">
-      <Card
-        hoverable
-        cover={
-          <img
-            alt="example"
-            src={picPath}
-          />
-        }
-      >
+      <Card hoverable cover={<img alt="example" src={picPath} />}>
         <Meta
           className="card-text"
           title={title}
           description={
-            <Button size="large" ghost className="view-menu-button">
+            <Button
+              onClick={handleChange}
+              size="large"
+              ghost
+              className="view-menu-button"
+            >
               View this Menu
             </Button>
           }
@@ -34,7 +31,7 @@ const StyledDiv = styled.div`
       background: none;
       border: none;
       margin-top: 30px;
-      margin:
+      margin: ;
     }
     .ant-card-meta-title,
     .ant-card-meta-description {
@@ -44,7 +41,7 @@ const StyledDiv = styled.div`
     .ant-card-hoverable {
       cursor: auto;
     }
-    img{
+    img {
       height: 430px;
       background-size: contain;
     }
