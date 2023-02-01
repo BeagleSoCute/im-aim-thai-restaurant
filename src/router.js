@@ -13,6 +13,8 @@ import { checkIsAuth } from "helpers/auth.helper";
 import { notification } from "helpers/notification.helper";
 import FoodDetails from "smart/FoodDetails";
 import PrivateRoute from "smart/PrivateRoute";
+import AllMenu from "smart/AllMenu";
+import Contact from "smart/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -35,8 +37,16 @@ export const router = createBrowserRouter([
         element: <ShowUserDetails />,
       },
       {
-        path: "/menu-details/:menuId",
+        path: "/menu-details/:type/:menuId",
         element: <FoodDetails />,
+      },
+      {
+        path: "/menu",
+        element: <AllMenu />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         element: <LoginAndRegisterLayout />,

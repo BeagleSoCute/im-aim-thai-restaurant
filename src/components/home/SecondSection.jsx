@@ -15,7 +15,7 @@ const SecondSection = ({ menuTypes, handleChange }) => {
           <Col key={item.id} span={6}>
             <CardMenu
               title={item.label}
-              picPath={item.picPath}
+              picPath={item.pic}
               handleChange={() => handleChange(item.type)}
             />
           </Col>

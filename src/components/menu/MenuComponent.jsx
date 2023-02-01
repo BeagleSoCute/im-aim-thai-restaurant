@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import { Row, Col, Image } from "antd";
 import backgroundPic from "assets/background/gray_background.jpg";
@@ -43,12 +42,16 @@ const MenuComponent = ({
             <Col className="menu-section" span={24}>
               <Row className="menu-wrapper">
                 {displayMenu.map((item) => (
-                  <Col onClick={() => navigate('/')} key={item.key} className="menu-content" span={12}>
+                  <Col key={item.key} className="menu-content" span={12}>
                     <Row>
                       <Col span={6} className="menu-picture">
                         <Image src={item.pic} />
                       </Col>
-                      <Col span={18} className="menu-description-section">
+                      <Col
+                        onClick={() => navigate(`/menu-details/${item.type}/${item.id}`)}
+                        span={18}
+                        className="menu-description-section"
+                      >
                         <Row>
                           <Col className="menu-name" span={12}>
                             {item.name}
@@ -76,7 +79,7 @@ const MenuComponent = ({
 
 const StyledDiv = styled.div`
   &.menu-component {
-    min-height:: 100vh;
+    min-height: 100vh;
     padding: 25px 0px;
     // background-color: red;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -108,10 +111,10 @@ const StyledDiv = styled.div`
     .menu-section {
       //   background-color: orange;
       .menu-content {
-        cursor: pointer;
         margin-bottom: 45px;
       }
       .menu-description-section {
+        cursor: pointer;
         padding: 10px 20px;
         // background-color: black;
 

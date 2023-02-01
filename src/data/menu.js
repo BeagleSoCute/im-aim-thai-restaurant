@@ -1,4 +1,4 @@
-export const foodMenu = [
+export const menuDetails = [
   {
     id: 1,
     pic: require("assets/home/pad_thai.jpg"),
@@ -75,52 +75,52 @@ export const foodMenu = [
 
 export const menuTypes = [
   {
-    id: 2,
+    id: 1,
     type: "soup",
     label: "Soup",
-    picPath: require("assets/menu_types/tom_yum.jpg"),
+    pic: require("assets/menu_types/tom_yum.jpg"),
+  },
+  {
+    id: 2,
+    type: "curry",
+    label: "Curry",
+    pic: require("assets/menu_types/green_curry.jpg"),
   },
   {
     id: 3,
-    type: "curry",
-    label: "Curry",
-    picPath: require("assets/menu_types/green_curry.jpg"),
+    type: "wok",
+    label: "Wok",
+    pic: require("assets/menu_types/wok.jpg"),
   },
   {
     id: 4,
-    type: "wok",
-    label: "Wok",
-    picPath: require("assets/menu_types/wok.jpg"),
+    type: "salad",
+    label: "Thai Salad",
+    pic: require("assets/menu_types/thai_salad.jpg"),
   },
   {
     id: 5,
-    type: "salad",
-    label: "Thai Salad",
-    picPath: require("assets/menu_types/sizzling.jpg"),
+    type: "sizzling",
+    label: "Sizzling",
+    pic: require("assets/menu_types/sizzling.jpg"),
   },
   {
     id: 6,
-    type: "sizzling",
-    label: "Sizzling",
-    picPath: require("assets/menu_types/sizzling.jpg"),
+    type: "riceAndNoodle",
+    label: "Rice & Noodle",
+    pic: require("assets/menu_types/pad_thai.jpg"),
   },
   {
     id: 7,
-    type: "riceAndNoodle",
-    label: "Rice & Noodle",
-    picPath: require("assets/menu_types/pad_thai.jpg"),
+    type: "appetizers",
+    label: "Appetizers",
+    pic: require("assets//menu_types/fried_chicken.jpg"),
   },
   {
     id: 8,
-    type: "appetizers",
-    label: "Appetizers",
-    picPath: require("assets//menu_types/thai_salad.jpg"),
-  },
-  {
-    id: 9,
     type: "dessert",
     label: "Dessert",
-    picPath: require("assets//menu_types/icecream.jpg"),
+    pic: require("assets//menu_types/icecream.jpg"),
   },
 ];
 

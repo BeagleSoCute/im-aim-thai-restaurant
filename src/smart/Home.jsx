@@ -8,26 +8,24 @@ import MenuComponent from "components/menu/MenuComponent";
 import ChefInfo from "components/home/ChefInfo";
 import ReviewSection from "components/home/ReviewSection";
 import ContactSection from "components/home/ContactSection";
-import { foodMenu, menuTypes, showMenuTypes } from "data/menu";
+import { menuDetails, menuTypes, showMenuTypes } from "data/menu";
 import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
+import { smoothScroll } from "services/common.services";
 
 const Home = () => {
-  const [displayMenu, setDisplayMenu] = useState(foodMenu);
+  const [displayMenu, setDisplayMenu] = useState(menuDetails);
   const [isSelectedType, setSelectedType] = useState("all");
   const handleChangeMenuType = (type) => {
     handleChangeMenu(type);
-    const element = document.getElementById("menu-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    smoothScroll("menu-section");
   };
   const handleChangeMenu = (inputType) => {
     let result = [];
     if (inputType !== "all") {
-      result = foodMenu.filter((item) => item.type === inputType);
+      result = menuDetails.filter((item) => item.type === inputType);
     } else {
-      result = foodMenu;
+      result = menuDetails;
     }
     setSelectedType(inputType);
     setDisplayMenu(result);
@@ -38,7 +36,10 @@ const Home = () => {
         <IntroSection clssName="intro-section" />
       </div>
       <div className="other-section">
-        <SecondSection menuTypes={menuTypes} handleChange={handleChangeMenuType} />
+        <SecondSection
+          menuTypes={menuTypes}
+          handleChange={handleChangeMenuType}
+        />
       </div>
       <div className="other-section">
         <SpecialMenu />
@@ -60,7 +61,7 @@ const Home = () => {
       <div className="other-section">
         <ReviewSection />
       </div>
-      <div className="other-section">
+      <div id="contact-section" className="other-section">
         <ContactSection contactDetails={contactDetails} />
       </div>
     </StyledDiv>

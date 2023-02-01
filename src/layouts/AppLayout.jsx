@@ -10,15 +10,20 @@ const { Header } = Layout;
 
 const authenMenu = [
   { key: 1, label: "Home", path: "/" },
-  { key: 2, label: "Dashboard", path: "/dashboard" },
-  { key: 3, label: "Profile", path: "/profile" },
-  { key: 4, label: "Logout", path: "/logout" },
+  { key: 2, label: "Menu", path: "/menu" },
+  { key: 3, label: "Contact Us", path: "/contact" },
+
+  // { key: 2, label: "Dashboard", path: "/dashboard" },
+  // { key: 3, label: "Profile", path: "/profile" },
+  // { key: 4, label: "Logout", path: "/logout" },
 ];
 const notAuthenMenu = [
-  { key: 5, label: "Home", path: "/" },
-  { key: 6, label: "Dashboard", path: "/dashboard" },
-  { key: 7, label: "Login", path: "/login" },
-  { key: 8, label: "Register", path: "/register" },
+  { key: 1, label: "Home", path: "/" },
+  { key: 2, label: "Menu", path: "/menu" },
+  { key: 3, label: "Contact Us", path: "/contact" },
+  // { key: 6, label: "Dashboard", path: "/dashboard" },
+  // { key: 7, label: "Login", path: "/login" },
+  // { key: 8, label: "Register", path: "/register" },
 ];
 
 const AppLayout = () => {
@@ -55,8 +60,8 @@ const AppLayout = () => {
         )}
         <div className="footer">
           <p>
-          © 2023 IM-AIM Thai Restaurt. All Rights Reserved | Developed by
-          Tanawat Limsakul
+            © 2023 IM-AIM Thai Restaurt. All Rights Reserved | Developed by
+            Tanawat Limsakul
           </p>
         </div>
       </div>
@@ -85,11 +90,11 @@ const StyledLayout = styled(Layout)`
       }
     }
     .footer {
-      display:flex;
+      display: flex;
       justify-content: center;
       height: 50px;
       background-color: black;
-      p{
+      p {
         margin: auto 0px;
       }
     }
