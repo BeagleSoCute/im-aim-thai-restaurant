@@ -13,7 +13,7 @@ const IconWithDetails = ({data}) => {
             span={4}
           >
             <Col className="icon-with-details-icon" span={24}>
-              <img src={item.icon} />
+              <img src={item.icon} alt={item.title} />
             </Col>
             <Col className="icon-with-details-title" span={24}>
               {item.title}
