@@ -8,7 +8,7 @@ import MenuComponent from "components/menu/MenuComponent";
 import ChefInfo from "components/home/ChefInfo";
 import ReviewSection from "components/home/ReviewSection";
 import ContactSection from "components/home/ContactSection";
-import { menuDetails, menuTypes, showMenuTypes } from "data/menu";
+import { menuDetails, menuTypes, showMenuTypes, menuPrice } from "data/menu";
 import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
 import { smoothScroll } from "services/common.services";
@@ -52,6 +52,7 @@ const Home = () => {
           displayMenu={displayMenu}
           types={showMenuTypes}
           isSelectedType={isSelectedType}
+          priceRange={menuPrice}
           handleChange={handleChangeMenu}
         />
       </div>

@@ -9,15 +9,18 @@ const contentStyle = {
   color: "#fff",
   textAlign: "center",
   padding: "50px",
-  backgroundImg : `url(${(props) => props.bgImg})`
+  backgroundImg: `url(${(props) => props.bgImg})`,
 };
 
 const ReviewSection = () => {
   return (
-    <StyledDiv bgImg={backgroundImg} className="review-section background-img-styled">
+    <StyledDiv
+      bgImg={backgroundImg}
+      className="review-section background-img-styled"
+    >
       <Carousel>
-        {reviewers.map((item) => (
-          <div className="test">
+        {reviewers.map((item, index) => (
+          <div key={index} className="test">
             <Row className="content-layout" style={contentStyle}>
               <Col className="content-wrapper" span={24}>
                 <h1>{item.review}</h1>

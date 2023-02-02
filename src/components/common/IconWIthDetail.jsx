@@ -8,7 +8,7 @@ const IconWithDetails = ({data}) => {
         {data.map((item, index) => (
           <StyledCol
             key={item.id}
-            isOdd={index % 2 === 0 ? true : false}
+            isodd={index % 2 === 0 ? "true" : "false"}
             className="each-icon-with-details"
             span={4}
           >
@@ -59,7 +59,7 @@ const StyledCol = styled(Col)`
   &.each-icon-with-details {
     margin: 0 25px;
     width: 100%;
-    background-color: ${(props) => (props.isOdd ? "#131414" : "#121111")};
+    background-color: ${(props) => (props.isodd === "true" ? "#131414" : "#121111")};
     padding: 50px;
   }
 `;

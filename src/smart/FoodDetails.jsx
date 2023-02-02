@@ -8,7 +8,6 @@ const FoodDetails = () => {
   useEffect(() => {
     const init = () => {
       const result = matchMenu(type, menuId);
-      console.log("result is", result);
       setMenu(result);
     };
     init();

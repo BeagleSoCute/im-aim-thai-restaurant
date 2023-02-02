@@ -1,15 +1,25 @@
 import styled from "styled-components";
 import pic from "assets/home/pad_thai.jpg";
 import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 const IntroSection = () => {
+  const navigate = useNavigate();
   return (
-    <StyledBackgroundImg className="intro-section background-img-styled" bgImg={pic}>
+    <StyledBackgroundImg
+      className="intro-section background-img-styled"
+      bgImg={pic}
+    >
       <div className="center-text">
         <div className="main-text">Flavors Inspired by the Thai Culture</div>
         <div className="sub-text">
           Come with family & feel the joy of traditional Thai food
         </div>
-        <Button size="large" ghost className="view-menu-button">
+        <Button
+          onClick={() => navigate("/menu")}
+          size="large"
+          ghost
+          className="view-menu-button"
+        >
           View Our Menu
         </Button>
       </div>

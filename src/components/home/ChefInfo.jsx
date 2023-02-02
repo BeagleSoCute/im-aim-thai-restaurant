@@ -24,8 +24,9 @@ const ChefInfo = ({ strengthData, staffsData }) => {
         </Col>
         <Col className="chef-details-section" span={24}>
           <Row className="chef-details-layout">
-            {staffsData.map((item) => (
+            {staffsData.map((item, index) => (
               <PicWithDetails
+                key={index}
                 pic={item.pic}
                 title={item.name}
                 subtitle={item.role}

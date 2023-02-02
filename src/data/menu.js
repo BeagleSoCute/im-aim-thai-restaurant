@@ -1,3 +1,46 @@
+export const choiceOf1 = [
+  { id: 1, label: "Chicken", value: 1, price: "22.90" },
+  { id: 2, label: "Beef", value: 2, price: "22.90" },
+  { id: 3, label: "Pork", value: 3, price: "22.90" },
+  { id: 4, label: "Duck", value: 4, price: "26.90" },
+  { id: 5, label: "Sea food", value: 5, price: "24.90" },
+  { id: 6, label: "Prawn", value: 6, price: "25.90" },
+];
+
+export const choiceOf2 = [
+  { id: 1, label: "Chicken", value: 1, price: "14.00" },
+  { id: 2, label: "Vegetable", value: 2, price: "12.00" },
+  { id: 3, label: "Vegetable & Tofu", value: 3, price: "13.00" },
+  { id: 4, label: "Mix Seafood", value: 4, price: "15.00" },
+  { id: 5, label: "Prawns", value: 5, price: "15.50" },
+];
+
+export const choiceOf3 = [
+  { id: 1, label: "Chicken", value: 1, price: "22.90" },
+  { id: 2, label: "Beef", value: 2, price: "22.90" },
+  { id: 3, label: "Pork", value: 3, price: "22.90" },
+  { id: 4, label: "Duck", value: 4, price: "26.90" },
+  { id: 5, label: "Fish Fillets or Squid", value: 5, price: "24.00" },
+  { id: 6, label: "Mixed Seafood", value: 6, price: "25.90" },
+  { id: 7, label: "Prawn Cutlets", value: 7, price: "14.00" },
+  { id: 8, label: "Vegtable", value: 8, price: "20.00" },
+  { id: 9, label: "Vegtable & Tofu", value: 9, price: "20.50" },
+];
+
+export const choiceOf4 = [
+  { id: 1, label: "Chicken", value: 1, price: "22.90" },
+  { id: 2, label: "Beef", value: 2, price: "22.90" },
+  { id: 3, label: "Pork", value: 3, price: "22.90" },
+  { id: 4, label: "Prawns", value: 4, price: "26.90" },
+  { id: 5, label: "Vegetable & Tofu", value: 5, price: "24.90" },
+];
+
+export const choiceOf5 = [
+  { id: 1, label: "Duck", value: 1, price: "26.90" },
+  { id: 2, label: "Seafood", value: 2, price: "24.90" },
+  { id: 3, label: "Prawns", value: 3, price: "25.90" },
+];
+
 export const menuDetails = [
   {
     id: 1,
@@ -125,6 +168,15 @@ export const menuTypes = [
 ];
 
 export const showMenuTypes = [
-  { id: 1, type: "all", label: "All" },
+  { id: 0, type: "all", label: "All" },
   ...menuTypes,
 ];
+
+export const menuPrice = {
+  sizzling: choiceOf1,
+  soup: choiceOf2,
+  curry: choiceOf3,
+  wok: choiceOf3,
+  riceAndNoodle: choiceOf4,
+};
+

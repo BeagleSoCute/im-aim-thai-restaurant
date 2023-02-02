@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Row, Col, Image } from "antd";
+import { Row, Col, Image, Button } from "antd";
 import backgroundPic from "assets/background/gray_background.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -24,12 +24,12 @@ const MenuComponent = ({
             </Col>
             <Col className="action-section" span={24}>
               <Row className="action-wrapper">
-                {types.map((item) => (
+                {types.map((item, index) => (
                   <div
                     className={`action-button ${
                       item.type === isSelectedType ? "is-selected" : ""
                     }`}
-                    key={item.id}
+                    key={index}
                     onClick={() => {
                       handleChange(item.type);
                     }}
@@ -41,17 +41,13 @@ const MenuComponent = ({
             </Col>
             <Col className="menu-section" span={24}>
               <Row className="menu-wrapper">
-                {displayMenu.map((item) => (
-                  <Col key={item.key} className="menu-content" span={12}>
+                {displayMenu.map((item, index) => (
+                  <Col key={index} className="menu-content" span={12}>
                     <Row>
-                      <Col span={6} className="menu-picture">
+                      <Col span={7} className="menu-picture">
                         <Image src={item.pic} />
                       </Col>
-                      <Col
-                        onClick={() => navigate(`/menu-details/${item.type}/${item.id}`)}
-                        span={18}
-                        className="menu-description-section"
-                      >
+                      <Col span={17} className="menu-description-section">
                         <Row>
                           <Col className="menu-name" span={12}>
                             {item.name}
@@ -61,6 +57,19 @@ const MenuComponent = ({
                           </Col>
                           <Col className="menu-description" span={24}>
                             <p className="nomal-text">{item.description}</p>
+                          </Col>
+                          <Col className="menu-button" span={24}>
+                            <Button
+                              onClick={() =>
+                                navigate(
+                                  `/menu-details/${item.type}/${item.id}`
+                                )
+                              }
+                              ghost
+                              className="view-menu-button"
+                            >
+                              More Details
+                            </Button>
                           </Col>
                         </Row>
                       </Col>
@@ -104,7 +113,7 @@ const StyledDiv = styled.div`
         margin: auto 25px;
         font-size: 25px;
       }
-      .action-button.is-selected{
+      .action-button.is-selected {
         border-bottom: 3px solid orange;
       }
     }
@@ -114,10 +123,8 @@ const StyledDiv = styled.div`
         margin-bottom: 45px;
       }
       .menu-description-section {
-        cursor: pointer;
         padding: 10px 20px;
         // background-color: black;
-
         .menu-description {
           margin-top: 5px;
         }
@@ -132,7 +139,7 @@ const StyledDiv = styled.div`
       .menu-picture {
         img {
           width: 100%;
-          height: 150px;
+          height: 180px;
         }
       }
     }
