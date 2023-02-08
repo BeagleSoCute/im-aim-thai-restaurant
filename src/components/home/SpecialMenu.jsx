@@ -4,16 +4,20 @@ import specialDishImg from "assets/common/special_dish.jpg";
 import { Row, Col, Button } from "antd";
 
 const SpecialMenu = () => {
+  console.log("SpecialMenu render");
   return (
-    <StyledDiv bgImg={backgroundPic} className="special-menu background-img-styled">
+    <StyledDiv
+      bgImg={backgroundPic}
+      className="special-menu background-img-styled"
+    >
       <Row className="wrapper">
         <Col span={12} className="picture-area">
-          <img src={specialDishImg} />
+          <img src={specialDishImg} alt='special dish' />
         </Col>
         <Col span={12} className="text-area">
           <Row>
             <Col span={24} className="mini-title">
-            SPECIAL DISH
+              SPECIAL DISH
             </Col>
             <Col span={24} className="title">
               Pad kra pao

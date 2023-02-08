@@ -4,6 +4,7 @@ import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 const IntroSection = () => {
   const navigate = useNavigate();
+  console.log('intro section rerender')
   return (
     <StyledBackgroundImg
       className="intro-section background-img-styled"

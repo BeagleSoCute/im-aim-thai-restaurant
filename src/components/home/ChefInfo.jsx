@@ -5,6 +5,7 @@ import IconWithDetails from "components/common/IconWIthDetail";
 import PicWithDetails from "components/common/PicWithDetails";
 
 const ChefInfo = ({ strengthData, staffsData }) => {
+  console.log('ChefInfo rerebder')
   return (
     <StyledDiv bgImg={pic} className="chef-info bg-original-color">
       <Row className="layout-wrapper strength-section">

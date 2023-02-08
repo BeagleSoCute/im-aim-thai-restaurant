@@ -10,6 +10,7 @@ const MenuComponent = ({
   handleChange,
 }) => {
   const navigate = useNavigate();
+  console.log('MenuComponent rerender')
   return (
     <StyledDiv
       bgImg={backgroundPic}

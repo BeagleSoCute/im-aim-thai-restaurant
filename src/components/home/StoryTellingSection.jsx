@@ -5,6 +5,7 @@ import storyPic3 from "assets/story/story3.jpg";
 import { Row, Col, Button } from "antd";
 
 const StoryTellingSection = () => {
+  console.log('StoryTellingSection rerender')
   return (
     <StyledDiv className="story-telling-section">
       <Row className="wrapper">

@@ -1,3 +1,4 @@
+import React, { useMemo, useCallback } from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import IntroSection from "components/home/IntroSection";
@@ -13,14 +14,20 @@ import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
 import { smoothScroll } from "services/common.services";
 
+const IntroSectionMemo = React.memo(IntroSection);
+const SecondSectionMemo = React.memo(SecondSection);
+const SpecialMenuMemo = React.memo(SpecialMenu);
+const ChefInfoMemo = React.memo(ChefInfo);
+const StoryTellingSectionMemo = React.memo(StoryTellingSection);
+const ReviewSectionMemo = React.memo(ReviewSection)
+const ContactSectionMemo = React.memo(ContactSection)
+
+
 const Home = () => {
   const [displayMenu, setDisplayMenu] = useState(menuDetails);
   const [isSelectedType, setSelectedType] = useState("all");
-  const handleChangeMenuType = (type) => {
-    handleChangeMenu(type);
-    smoothScroll("menu-section");
-  };
-  const handleChangeMenu = (inputType) => {
+
+  const handleChangeMenu = useCallback((inputType) => {
     let result = [];
     if (inputType !== "all") {
       result = menuDetails.filter((item) => item.type === inputType);
@@ -29,23 +36,27 @@ const Home = () => {
     }
     setSelectedType(inputType);
     setDisplayMenu(result);
-  };
+  }, []);
+  const handleChangeMenuType = useCallback((type) => {
+    handleChangeMenu(type);
+    smoothScroll("menu-section");
+  }, []);
   return (
     <StyledDiv clssName="home">
       <div className="first-section">
-        <IntroSection clssName="intro-section" />
+        <IntroSectionMemo clssName="intro-section" />
       </div>
       <div className="other-section">
-        <SecondSection
+        <SecondSectionMemo
           menuTypes={menuTypes}
           handleChange={handleChangeMenuType}
         />
       </div>
       <div className="other-section">
-        <SpecialMenu />
+        <SpecialMenuMemo />
       </div>
       <div className="other-section">
-        <StoryTellingSection />
+        <StoryTellingSectionMemo />
       </div>
       <div id="menu-section" className="other-section">
         <MenuComponent
@@ -57,13 +68,13 @@ const Home = () => {
         />
       </div>
       <div className="other-section">
-        <ChefInfo staffsData={staffs} strengthData={strengthData} />
+        <ChefInfoMemo staffsData={staffs} strengthData={strengthData} />
       </div>
       <div className="other-section">
-        <ReviewSection />
+        <ReviewSectionMemo />
       </div>
       <div id="contact-section" className="other-section">
-        <ContactSection contactDetails={contactDetails} />
+        <ContactSectionMemo contactDetails={contactDetails} />
       </div>
     </StyledDiv>
   );
