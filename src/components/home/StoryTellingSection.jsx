@@ -5,7 +5,7 @@ import storyPic3 from "assets/story/story3.jpg";
 import { Row, Col, Button } from "antd";
 
 const StoryTellingSection = () => {
-  console.log('StoryTellingSection rerender')
+  console.log("StoryTellingSection rerender");
   return (
     <StyledDiv className="story-telling-section">
       <Row className="wrapper">
@@ -18,11 +18,13 @@ const StoryTellingSection = () => {
               Every Flavor Tells a Story
             </Col>
             <Col className="description" span={24}>
-              Lorem Ipsum is simply dummy text of the printingand typesetting
-              industry lorem Ipsum has been the industrys standard dummy text
-              ever since the when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book It has survived not only
-              five centuries, but also the leap into.
+              <p>
+                Lorem Ipsum is simply dummy text of the printingand typesetting
+                industry lorem Ipsum has been the industrys standard dummy text
+                ever since the when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book It has survived not
+                only five centuries, but also the leap into.
+              </p>
             </Col>
             <Col className="phone-title" span={24}>
               Call to order the best meal

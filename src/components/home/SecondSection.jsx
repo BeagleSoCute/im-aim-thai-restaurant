@@ -3,17 +3,24 @@ import CardMenu from "components/common/CardMenu";
 import { Row, Col } from "antd";
 
 const SecondSection = ({ menuTypes, handleChange }) => {
-  console.log('SecondSection rerender')
+  console.log("SecondSection rerender");
   return (
     <StyledDiv className="second-section">
-      <div className="mini-title"> SPECIAL THAI FOOD</div>
-      <div className="content-wrapper header-text">Menu</div>
-      <div className="content-wrapper normal-text">
-        Select the menu that you like.
-      </div>
+      <Row className="text-wrapper">
+        <Col span={24}>
+          <h2 className="subtitle-text"> SPECIAL THAI FOOD</h2>
+        </Col>
+        <Col span={24}>
+          <h1 className=" header-text">Menu</h1>
+        </Col>
+        <Col span={24}>
+          <p className=" normal-text">Select the menu that you like.</p>
+        </Col>
+      </Row>
+
       <Row gutter={[30, 30]} justify={"center"}>
         {menuTypes.map((item) => (
-          <Col key={item.id} span={6}>
+          <Col key={item.id} xs={24} sm={12} md={8} lg={6}>
             <CardMenu
               title={item.label}
               picPath={item.pic}
@@ -30,20 +37,10 @@ const StyledDiv = styled.div`
     min-height: 100vh;
     background-color: #100e09;
     padding: 50px;
-    color: white;
-    .content-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-    .header-text {
-      font-size: 35px;
-    }
-    .normal-text {
+    p {
       font-size: 18px;
     }
-    .mini-title {
+    .text-wrapper{
       text-align: center;
     }
   }

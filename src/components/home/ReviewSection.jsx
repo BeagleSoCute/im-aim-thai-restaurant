@@ -9,7 +9,6 @@ const contentStyle = {
   color: "#fff",
   textAlign: "center",
   padding: "50px",
-  backgroundColor: '#272121'
 };
 
 const ReviewSection = () => {
@@ -32,7 +31,6 @@ const ReviewSection = () => {
             </Row>
           </div>
         ))}
-        
       </Carousel>
     </StyledDiv>
   );
@@ -40,11 +38,11 @@ const ReviewSection = () => {
 const StyledDiv = styled.div`
   &.review-section {
     height: 100vh;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    // url(${(props) => props.bgImg});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(${(props) => props.bgImg});
 
-    .content-layout{
-        justify-content: center;
+    .content-layout {
+      justify-content: center;
     }
     .content-wrapper {
       margin: auto 0px;
@@ -52,17 +50,17 @@ const StyledDiv = styled.div`
       h1 {
         font-size: 40px;
       }
-      img{ 
-        height: 150px; 
+      img {
+        height: 150px;
         width: 150px;
         display: inline-flex;
         border-radius: 50%;
       }
-      .reviewer-profile{
+      /* .reviewer-profile{
         p{
             font
         }
-      }
+      } */
     }
   }
 `;

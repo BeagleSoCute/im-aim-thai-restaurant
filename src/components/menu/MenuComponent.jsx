@@ -91,7 +91,6 @@ const StyledDiv = styled.div`
   &.menu-component {
     min-height: 100vh;
     padding: 25px 0px;
-    // background-color: red;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(${(props) => props.bgImg});
     .action-section {

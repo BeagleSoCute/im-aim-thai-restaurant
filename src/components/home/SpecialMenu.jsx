@@ -11,23 +11,25 @@ const SpecialMenu = () => {
       className="special-menu background-img-styled"
     >
       <Row className="wrapper">
-        <Col span={12} className="picture-area">
-          <img src={specialDishImg} alt='special dish' />
+        <Col sm={24} md={12} className="picture-area">
+          <img src={specialDishImg} alt="special dish" />
         </Col>
-        <Col span={12} className="text-area">
+        <Col sm={24} md={12} className="text-area">
           <Row>
-            <Col span={24} className="mini-title">
-              SPECIAL DISH
+            <Col span={24}>
+              <h2 className="subtitle-text">SPECIAL DISH</h2>
             </Col>
             <Col span={24} className="title">
-              Pad kra pao
+              <h1 className="special-menu-title">Pad kra pao</h1>
             </Col>
             <Col span={24} className="description nomal-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting
-              industry lorem Ipsum has been the industrys standard dummy text
-              ever since the when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book It has survived not only
-              five centuries, but also the leap into.
+              <p>
+                Lorem Ipsum is simply dummy text of the printingand typesetting
+                industry lorem Ipsum has been the industrys standard dummy text
+                ever since the when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book It has survived not
+                only five centuries, but also the leap into.
+              </p>
             </Col>
             <Col className="button-action" span={24}>
               <Button size="large" ghost className="view-menu-button">
@@ -44,38 +46,41 @@ const SpecialMenu = () => {
 const StyledDiv = styled.div`
   &.special-menu {
     width: 100%;
-    padding: 0px; 50px;
+    padding: 0px 50px;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(${(props) => props.bgImg});
+    margin: auto 0px;
     .wrapper {
       height: 100%;
     }
     .picture-area {
-      img{
-        width: 100%; 
+      img {
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
-    .text-area{
+    .text-area {
       padding: 50px;
-      background-color:#0e0e0e;
+      background-color: #0e0e0e;
       margin: auto 0px;
-      .title, 
+      .title,
       .description {
         text-align: center;
       }
-      .title{
+      .title {
         font-weight: bold;
-        font-size: 20px;
         margin-bottom: 15px;
       }
-      .sub-title{
+      .special-menu-title {
+        font-size: 20px;
+      }
+      .sub-title {
         font-weight: bold;
         font-size: 15px;
       }
-      .button-action{
+      .button-action {
         margin-top: 20px;
         text-align: center;
       }
