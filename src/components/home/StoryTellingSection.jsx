@@ -9,7 +9,7 @@ const StoryTellingSection = () => {
   return (
     <StyledDiv className="story-telling-section">
       <Row className="wrapper">
-        <Col className="text-area" span={6}>
+        <Col className="text-area" xs={24} lg={10} xl={6}>
           <Row>
             <Col className="title gold-color" span={24}>
               Our Story
@@ -39,7 +39,7 @@ const StoryTellingSection = () => {
             </Col>
           </Row>
         </Col>
-        <Col className="picture-area" span={17}>
+        <Col className="picture-area" xs={24} lg={14} xl={17}>
           <Row>
             <Col span={8}>
               <img className="pic1" src={storyPic1} />
@@ -74,38 +74,59 @@ const StyledDiv = styled.div`
         font-size: 20px;
       }
       .title,
-      .sub-title, 
-      .description, 
+      .sub-title,
+      .description,
       .phone-number,
       .phone-title {
         text-align: center;
       }
       .sub-title {
-        margin: 20px; 0px;
+        margin: 20px 0px;
         font-size: 35px;
       }
-      .phone-number, .phone-title{
-        color: #e4c950
+      .phone-number,
+      .phone-title {
+        color: #e4c950;
       }
-      .phone-title{
+      .phone-title {
         font-size: 20px;
       }
-      .phone-number{
+      .phone-number {
         font-size: 35px;
       }
     }
     .picture-area {
-      img{
-        width: 100%; 
+      img {
+        width: 100%;
         height: 100%;
       }
     }
-    .picture-area, .text-area{
+    .picture-area,
+    .text-area {
       margin: auto 0px;
     }
-    .button-action{
+    .button-action {
       margin-top: 20px;
       text-align: center;
+    }
+    /* Laptops (1366px and up) */
+    @media only screen and (max-width: 1366px) {
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 992px) {
+      /* min-height: 100vh; */
+    }
+
+    /* styles for smartphone screens in landscape orientation */
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+    }
+
+    /* styles for smartphone screens in portrait orientation */
+    @media only screen and (max-width: 480px) {
     }
   }
 `;

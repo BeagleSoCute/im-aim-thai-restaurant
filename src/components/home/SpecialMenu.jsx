@@ -11,10 +11,10 @@ const SpecialMenu = () => {
       className="special-menu background-img-styled"
     >
       <Row className="wrapper">
-        <Col sm={24} md={12} className="picture-area">
+        <Col xs={24} lg={12} className="picture-area">
           <img src={specialDishImg} alt="special dish" />
         </Col>
-        <Col sm={24} md={12} className="text-area">
+        <Col xs={24} lg={12} className="text-area">
           <Row>
             <Col span={24}>
               <h2 className="subtitle-text">SPECIAL DISH</h2>
@@ -46,8 +46,6 @@ const SpecialMenu = () => {
 const StyledDiv = styled.div`
   &.special-menu {
     width: 100%;
-    padding: 0px 50px;
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(${(props) => props.bgImg});
     margin: auto 0px;
@@ -83,6 +81,36 @@ const StyledDiv = styled.div`
       .button-action {
         margin-top: 20px;
         text-align: center;
+      }
+    }
+    /* Laptops (1366px and up) */
+    @media only screen and (max-width: 1531px) {
+      .text-area {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(${(props) => props.bgImg});
+      }
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 992px) {
+  
+    }
+
+    /* styles for smartphone screens in landscape orientation */
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+    }
+
+    /* styles for smartphone screens in portrait orientation */
+    @media only screen and (max-width: 480px) {
+      padding: 0px;
+      .text-area {
+        padding: 20px;
+        margin: 0px;
       }
     }
   }

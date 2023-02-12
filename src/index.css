@@ -90,3 +90,12 @@ h2 {
 /* styles for smartphone screens in portrait orientation */
 @media only screen and (max-width: 480px) {
 }
+
+/* Ant design breakpoints */
+
+/* xs: '480px',
+sm: '576px',
+md: '768px',
+lg: '992px',
+xl: '1200px',
+xxl: '1600px', */
