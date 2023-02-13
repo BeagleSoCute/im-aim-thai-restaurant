@@ -3,7 +3,6 @@ import CardMenu from "components/common/CardMenu";
 import { Row, Col } from "antd";
 
 const SecondSection = ({ menuTypes, handleChange }) => {
-  console.log("SecondSection rerender");
   return (
     <StyledDiv className="second-section">
       <Row className="text-wrapper">

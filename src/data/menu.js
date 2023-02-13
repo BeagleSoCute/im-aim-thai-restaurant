@@ -1,44 +1,192 @@
 export const choiceOf1 = [
-  { id: 1, label: "Chicken", value: 1, price: "22.90" },
-  { id: 2, label: "Beef", value: 2, price: "22.90" },
-  { id: 3, label: "Pork", value: 3, price: "22.90" },
-  { id: 4, label: "Duck", value: 4, price: "26.90" },
-  { id: 5, label: "Sea food", value: 5, price: "24.90" },
-  { id: 6, label: "Prawn", value: 6, price: "25.90" },
+  {
+    id: 1,
+    icon: require("assets/icon/chicken.png"),
+    label: "Chicken",
+    price: "22.90",
+  },
+  {
+    id: 2,
+    icon: require("assets/icon/beef.png"),
+    label: "Beef",
+    price: "22.90",
+  },
+  {
+    id: 3,
+    icon: require("assets/icon/pork.png"),
+    label: "Pork",
+    price: "22.90",
+  },
+  {
+    id: 4,
+    icon: require("assets/icon/duck.png"),
+    label: "Duck",
+    price: "26.90",
+  },
+  {
+    id: 5,
+    icon: require("assets/icon/seafood.png"),
+    label: "Sea food",
+    price: "24.90",
+  },
+  {
+    id: 6,
+    icon: require("assets/icon/shrimp.png"),
+    label: "Prawn",
+    price: "25.90",
+  },
 ];
 
 export const choiceOf2 = [
-  { id: 1, label: "Chicken", value: 1, price: "14.00" },
-  { id: 2, label: "Vegetable", value: 2, price: "12.00" },
-  { id: 3, label: "Vegetable & Tofu", value: 3, price: "13.00" },
-  { id: 4, label: "Mix Seafood", value: 4, price: "15.00" },
-  { id: 5, label: "Prawns", value: 5, price: "15.50" },
+  {
+    id: 1,
+    icon: require("assets/icon/chicken.png"),
+    label: "Chicken",
+    price: "14.00",
+  },
+  {
+    id: 2,
+    icon: require("assets/icon/vegetable.png"),
+    label: "Vegetable",
+    price: "12.00",
+  },
+  {
+    id: 3,
+    icon: require("assets/icon/tofu.png"),
+    label: "Vegetable & Tofu",
+    price: "13.00",
+  },
+  {
+    id: 4,
+    icon: require("assets/icon/seafood.png"),
+    label: "Mix Seafood",
+    price: "15.00",
+  },
+  {
+    id: 5,
+    icon: require("assets/icon/shrimp.png"),
+    label: "Prawn",
+    price: "15.50",
+  },
 ];
 
 export const choiceOf3 = [
-  { id: 1, label: "Chicken", value: 1, price: "22.90" },
-  { id: 2, label: "Beef", value: 2, price: "22.90" },
-  { id: 3, label: "Pork", value: 3, price: "22.90" },
-  { id: 4, label: "Duck", value: 4, price: "26.90" },
-  { id: 5, label: "Fish Fillets or Squid", value: 5, price: "24.00" },
-  { id: 6, label: "Mixed Seafood", value: 6, price: "25.90" },
-  { id: 7, label: "Prawn Cutlets", value: 7, price: "14.00" },
-  { id: 8, label: "Vegtable", value: 8, price: "20.00" },
-  { id: 9, label: "Vegtable & Tofu", value: 9, price: "20.50" },
+  {
+    id: 1,
+    icon: require("assets/icon/chicken.png"),
+    label: "Chicken",
+    price: "22.90",
+  },
+  {
+    id: 2,
+    icon: require("assets/icon/beef.png"),
+    label: "Beef",
+    price: "22.90",
+  },
+  {
+    id: 3,
+    icon: require("assets/icon/pork.png"),
+    label: "Pork",
+    price: "22.90",
+  },
+  {
+    id: 4,
+    icon: require("assets/icon/duck.png"),
+    label: "Duck",
+    price: "26.90",
+  },
+  {
+    id: 5,
+    icon: require("assets/icon/fish.png"),
+    label: "Fish Fillets or Squid",
+    price: "24.00",
+  },
+  {
+    id: 6,
+    icon: require("assets/icon/seafood.png"),
+    label: "Mixed Seafood",
+    price: "25.90",
+  },
+  {
+    id: 7,
+    icon: require("assets/icon/fried-shrimp.png"),
+    label: "Prawn Cutlets",
+    price: "14.00",
+  },
+  {
+    id: 8,
+    icon: require("assets/icon/vegetable.png"),
+    label: "Vegtable",
+    price: "20.00",
+  },
+  {
+    id: 9,
+    icon: require("assets/icon/tofu.png"),
+    label: "Vegtable & Tofu",
+    price: "20.50",
+  },
 ];
 
 export const choiceOf4 = [
-  { id: 1, label: "Chicken", value: 1, price: "22.90" },
-  { id: 2, label: "Beef", value: 2, price: "22.90" },
-  { id: 3, label: "Pork", value: 3, price: "22.90" },
-  { id: 4, label: "Prawns", value: 4, price: "26.90" },
-  { id: 5, label: "Vegetable & Tofu", value: 5, price: "24.90" },
+  {
+    id: 1,
+    icon: require("assets/icon/chicken.png"),
+    label: "Chicken",
+    value: 1,
+    price: "22.90",
+  },
+  {
+    id: 2,
+    icon: require("assets/icon/beef.png"),
+    label: "Beef",
+    value: 2,
+    price: "22.90",
+  },
+  {
+    id: 3,
+    icon: require("assets/icon/pork.png"),
+    label: "Pork",
+    value: 3,
+    price: "22.90",
+  },
+  {
+    id: 4,
+    icon: require("assets/icon/shrimp.png"),
+    label: "Prawn",
+    value: 4,
+    price: "26.90",
+  },
+  {
+    id: 5,
+    icon: require("assets/icon/tofu.png"),
+    label: "Vegetable & Tofu",
+    value: 5,
+    price: "24.90",
+  },
 ];
 
 export const choiceOf5 = [
-  { id: 1, label: "Duck", value: 1, price: "26.90" },
-  { id: 2, label: "Seafood", value: 2, price: "24.90" },
-  { id: 3, label: "Prawns", value: 3, price: "25.90" },
+  {
+    id: 1,
+    icon: require("assets/icon/duck.png"),
+    label: "Duck",
+    value: 1,
+    price: "26.90",
+  },
+  {
+    id: 2,
+    icon: require("assets/icon/seafood.png"),
+    label: "Seafood",
+    value: 2,
+    price: "24.90",
+  },
+  {
+    id: 3,
+    icon: require("assets/icon/shrimp.png"),
+    label: "Prawn",
+    value: 3,
+    price: "25.90",
+  },
 ];
 
 export const menuDetails = [
@@ -172,11 +320,11 @@ export const showMenuTypes = [
   ...menuTypes,
 ];
 
-export const menuPrice = {
+export const menuChoiceOF = {
   sizzling: choiceOf1,
   soup: choiceOf2,
   curry: choiceOf3,
   wok: choiceOf3,
   riceAndNoodle: choiceOf4,
+  signatureDishes: choiceOf3
 };
-

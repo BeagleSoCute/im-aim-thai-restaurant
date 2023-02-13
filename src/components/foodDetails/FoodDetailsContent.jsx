@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import { Row, Col } from "antd";
 import PropTypes from "prop-types";
+import ChoiceOf from "components/foodDetails/ChoiceOf";
 
 const propTypes = {
   type: PropTypes.object,
   details: PropTypes.object,
+  selectedChoice: PropTypes.object,
+  choiceOf: PropTypes.array,
+  handleChange: PropTypes.func,
 };
 const defaultProps = {
   type: {
@@ -21,16 +25,32 @@ const defaultProps = {
     price: "",
     description: "",
   },
+  choiceOf: [],
+  selectedChoice: {},
+  handleChange: () => {},
 };
 
-const FoodDetailsContent = ({ type, details }) => {
+const FoodDetailsContent = ({
+  type,
+  details,
+  choiceOf,
+  selectedChoice,
+  handleChange,
+}) => {
   return (
     <StyledDiv className="food-details-content bg-original-color">
       <Row>
         <Col span={24}>
-          <StyledRow bgImg={type.pic} className="type-bg background-img-styled">
+          <StyledRow bgimg={type.pic} className="type-bg background-img-styled">
             <p>{type.label}</p>
           </StyledRow>
+        </Col>
+        <Col span={24}>
+          <ChoiceOf
+            data={choiceOf}
+            handleChange={handleChange}
+            selectedChoice={selectedChoice}
+          />
         </Col>
         <Col className="menu-detail" span={12}>
           <img className="normal-img" src={details.pic} />
@@ -41,7 +61,12 @@ const FoodDetailsContent = ({ type, details }) => {
             {details.description}
           </Col>
           <Col className="menu-detail-price" span={24}>
-            Price: <span className="gold-color"> ${details.price} </span>
+            Price:
+            <span className="gold-color">
+              {selectedChoice.price
+                ? " $" + selectedChoice.price
+                : " Please select a choice of meat"}
+            </span>
           </Col>
         </Col>
       </Row>
@@ -69,13 +94,13 @@ const StyledDiv = styled.div`
     }
     /* styles for tablet screens in landscape orientation */
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      .menu-detail  img{
+      .menu-detail img {
         height: 300px;
       }
     }
     /* styles for tablet screens in portrait orientation */
     @media only screen and (max-width: 768px) {
-      .menu-detail  img{
+      .menu-detail img {
         height: 200px;
       }
     }
@@ -85,9 +110,8 @@ const StyledRow = styled(Row)`
   &.type-bg {
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(${(props) => props.bgImg});
+      url(${(props) => props.bgimg});
     height: 250px;
-
     p {
       margin: auto 0px;
       font-size: 45px;

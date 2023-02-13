@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import pic from "assets/background/rock.jpg";
 import { Row, Col } from "antd";
 import IconWithDetails from "components/common/IconWIthDetail";
 import PicWithDetails from "components/common/PicWithDetails";
 
 const ChefInfo = ({ strengthData, staffsData }) => {
   return (
-    <StyledDiv bgImg={pic} className="chef-info bg-original-color">
+    <StyledDiv  className="chef-info bg-original-color">
       <Row className="layout-wrapper strength-section">
         <Col className="title" span={24}>
           <div className="mini-title"> WHY CHOOSE US</div>
@@ -42,10 +41,8 @@ const ChefInfo = ({ strengthData, staffsData }) => {
 
 const StyledDiv = styled.div`
     &.chef-info{
-        // background-color: green;
         padding: 50px;
         min-height: 100vh;
-        /* url(${(props) => props.bgImg}); */
         .layout-wrapper{
             .title{
                 font-size: 35px;
@@ -53,10 +50,8 @@ const StyledDiv = styled.div`
         }
         .all-strength-wrapper{
             margin-top: 30px;
-            // background-color: blue;
         }
         .chef-section{
-            // background-color: purple;
             margin-top: 50px;
         }
         .pic-with-details{

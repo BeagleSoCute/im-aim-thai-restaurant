@@ -6,3 +6,14 @@
 <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by justicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/chicken" title="chicken icons">Chicken icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/pork" title="pork icons">Pork icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/shrimp" title="Shrimp icons">Shrimp icons created by monkik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/beef" title="beef icons">Beef icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/duck" title="duck icons">Duck icons created by mangsaabguru - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/seafood" title="seafood icons">Seafood icons created by Kanyanee Watanajitkasem - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/squid" title="squid icons">Squid icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/vegetable" title="vegetable icons">Vegetable icons created by Eucalyp - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/tofu" title="tofu icons">Tofu icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/fish" title="fish icons">Fish icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/prawn" title="Prawn icons">Prawn icons created by andinur - Flaticon</a>
