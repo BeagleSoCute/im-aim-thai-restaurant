@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 
 const ChoiceOf = ({ data, selectedChoice, handleChange }) => {
   return (
-    <StyledDiv span={4} className="choice-of mx-5 p-1">
+    <StyledDiv span={4} className="choice-of mx-5 mb-2 py-xl-1 px-xl-5">
       <h1>Choice of Meats</h1>
       <Row justify={"center"}>
         {data.map((item) => (
@@ -11,8 +11,9 @@ const ChoiceOf = ({ data, selectedChoice, handleChange }) => {
             isselected={selectedChoice.id === item.id ? "true" : "false"}
             onClick={() => handleChange(item)}
             key={item.id}
-            className="each-item my-3 p-3"
-            span={4}
+            className="each-item  p-3"
+            xs={12}
+            xl={4}
           >
             <Col className="icon" span={24}>
               <img src={item.icon} />
@@ -32,7 +33,6 @@ const ChoiceOf = ({ data, selectedChoice, handleChange }) => {
 
 const StyledDiv = styled.div`
   &.choice-of {
-    background-color: #222222;
     text-align: center;
     .icon img {
       width: 45px;
@@ -43,7 +43,7 @@ const StyledDiv = styled.div`
 const StyledCol = styled(Col)`
   &.each-item {
     background-color: ${(props) =>
-      props.isselected === "true" ? "#131414" : undefined};
+      props.isselected === "true" ? "#131414" : "#222222"};
     width: 100%;
     border: 1px solid black;
     cursor: pointer;

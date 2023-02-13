@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Row, Col, Image, Button } from "antd";
 import backgroundPic from "assets/background/gray_background.jpg";
 import { useNavigate } from "react-router-dom";
+import { menuChoiceOf } from "data/menu";
 
 const MenuComponent = ({
   displayMenu,
@@ -53,7 +54,7 @@ const MenuComponent = ({
                             {item.name}
                           </Col>
                           <Col className="menu-price gold-color" span={12}>
-                            ${item.price}
+                           { menuChoiceOf[item.type] ? 'Price up to a selection'  :'$'+item.price}
                           </Col>
                           <Col className="menu-description" span={24}>
                             <p className="nomal-text">{item.description}</p>
@@ -155,6 +156,10 @@ const StyledDiv = styled.div`
       .action-button {
         margin: 20px 25px !important ;
       }
+      .menu-price{
+        margin: auto 0px;
+        font-size: 14px!important;
+      }
     }
     /* Laptops (1366px and up) */
     @media only screen and (max-width: 1366px) {
@@ -164,7 +169,8 @@ const StyledDiv = styled.div`
     }
 
     /* styles for tablet screens in portrait orientation */
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
+     
     }
 
     /* styles for smartphone screens in landscape orientation */

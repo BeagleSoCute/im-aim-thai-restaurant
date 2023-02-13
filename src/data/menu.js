@@ -320,7 +320,7 @@ export const showMenuTypes = [
   ...menuTypes,
 ];
 
-export const menuChoiceOF = {
+export const menuChoiceOf = {
   sizzling: choiceOf1,
   soup: choiceOf2,
   curry: choiceOf3,

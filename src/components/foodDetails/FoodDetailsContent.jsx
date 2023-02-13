@@ -37,6 +37,11 @@ const FoodDetailsContent = ({
   selectedChoice,
   handleChange,
 }) => {
+  const isChoiceOf = choiceOf.length !== 0;
+  const isAlreadySelectChoice = selectedChoice.price
+    ? " $" + selectedChoice.price
+    : " Please select a choice of meat";
+  const showPrice = isChoiceOf ? isAlreadySelectChoice : " $" + details.price;
   return (
     <StyledDiv className="food-details-content bg-original-color">
       <Row>
@@ -45,13 +50,16 @@ const FoodDetailsContent = ({
             <p>{type.label}</p>
           </StyledRow>
         </Col>
-        <Col span={24}>
-          <ChoiceOf
-            data={choiceOf}
-            handleChange={handleChange}
-            selectedChoice={selectedChoice}
-          />
-        </Col>
+        {isChoiceOf && (
+          <Col span={24}>
+            <ChoiceOf
+              data={choiceOf}
+              handleChange={handleChange}
+              selectedChoice={selectedChoice}
+              isChoiceOf={isChoiceOf}
+            />
+          </Col>
+        )}
         <Col className="menu-detail" span={12}>
           <img className="normal-img" src={details.pic} />
           <Col className="menu-detail-name title" span={24}>
@@ -62,11 +70,7 @@ const FoodDetailsContent = ({
           </Col>
           <Col className="menu-detail-price" span={24}>
             Price:
-            <span className="gold-color">
-              {selectedChoice.price
-                ? " $" + selectedChoice.price
-                : " Please select a choice of meat"}
-            </span>
+            <span className="gold-color">{showPrice}</span>
           </Col>
         </Col>
       </Row>
@@ -102,6 +106,9 @@ const StyledDiv = styled.div`
     @media only screen and (max-width: 768px) {
       .menu-detail img {
         height: 200px;
+      }
+      .menu-detail-name,.menu-detail-price{
+        font-size: 20px!important;
       }
     }
   }

@@ -10,13 +10,11 @@ const FoodDetails = () => {
   useEffect(() => {
     const init = () => {
       const result = matchMenu(type, menuId);
-      console.log("result", result);
       setMenu(result);
     };
     init();
   }, [type, menuId]);
   const handleSelectChoiceOf = (selectedValue) => {
-    console.log("handleSelectChoiceOf", selectedValue);
     setChoice(selectedValue);
   };
   return (

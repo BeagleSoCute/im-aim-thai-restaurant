@@ -4,7 +4,6 @@ import specialDishImg from "assets/common/special_dish.jpg";
 import { Row, Col, Button } from "antd";
 
 const SpecialMenu = () => {
-  console.log("SpecialMenu render");
   return (
     <StyledDiv
       bgImg={backgroundPic}
