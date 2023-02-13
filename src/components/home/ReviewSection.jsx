@@ -24,7 +24,7 @@ const ReviewSection = () => {
               <Col className="content-wrapper" span={24}>
                 <h1>{item.review}</h1>
               </Col>
-              <Col className="reviewer-profile content-wrapper" span={24}>
+              <Col className="reviewer-profile content-wrapper">
                 <img src={item.pic} alt={item.name} />
                 <p className="normal-text">{item.name}</p>
               </Col>
@@ -37,10 +37,9 @@ const ReviewSection = () => {
 };
 const StyledDiv = styled.div`
   &.review-section {
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(${(props) => props.bgImg});
-
     .content-layout {
       justify-content: center;
     }
@@ -56,11 +55,28 @@ const StyledDiv = styled.div`
         display: inline-flex;
         border-radius: 50%;
       }
-      /* .reviewer-profile{
-        p{
-            font
+      /* Laptops (1366px and up) */
+      @media only screen and (max-width: 1366px) {
+      }
+      /* styles for tablet screens in landscape orientation */
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      }
+
+      /* styles for tablet screens in portrait orientation */
+      @media only screen and (max-width: 992px) {
+        h1 {
+          font-size: 24px;
         }
-      } */
+     
+      }
+
+      /* styles for smartphone screens in landscape orientation */
+      @media only screen and (min-width: 480px) and (max-width: 720px) {
+      }
+
+      /* styles for smartphone screens in portrait orientation */
+      @media only screen and (max-width: 480px) {
+      }
     }
   }
 `;

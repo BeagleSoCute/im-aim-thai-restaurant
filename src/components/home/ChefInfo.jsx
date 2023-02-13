@@ -5,7 +5,6 @@ import IconWithDetails from "components/common/IconWIthDetail";
 import PicWithDetails from "components/common/PicWithDetails";
 
 const ChefInfo = ({ strengthData, staffsData }) => {
-  console.log('ChefInfo rerebder')
   return (
     <StyledDiv bgImg={pic} className="chef-info bg-original-color">
       <Row className="layout-wrapper strength-section">
@@ -46,7 +45,7 @@ const StyledDiv = styled.div`
         // background-color: green;
         padding: 50px;
         min-height: 100vh;
-        url(${(props) => props.bgImg});
+        /* url(${(props) => props.bgImg}); */
         .layout-wrapper{
             .title{
                 font-size: 35px;

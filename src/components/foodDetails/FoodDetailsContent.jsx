@@ -64,7 +64,19 @@ const StyledDiv = styled.div`
       }
       img {
         width: 100%;
-        height: 650px;
+        height: 450px;
+      }
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .menu-detail  img{
+        height: 300px;
+      }
+    }
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 768px) {
+      .menu-detail  img{
+        height: 200px;
       }
     }
   }

@@ -94,8 +94,34 @@ const StyledLayout = styled(Layout)`
       justify-content: center;
       height: 50px;
       background-color: black;
+      align-items: center;
+      text-align: center;
       p {
         margin: auto 0px;
+      }
+    }
+    /* Laptops (1366px and up) */
+    @media only screen and (max-width: 1366px) {
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 768px) {
+    }
+
+    /* styles for smartphone screens in landscape orientation */
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+    }
+
+    /* styles for smartphone screens in portrait orientation */
+    @media only screen and (max-width: 480px) {
+      .footer{
+        height: 80px;
+        p{
+          /* align-items: center; */
+        }
       }
     }
   }

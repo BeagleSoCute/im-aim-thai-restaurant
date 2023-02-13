@@ -10,15 +10,14 @@ const MenuComponent = ({
   handleChange,
 }) => {
   const navigate = useNavigate();
-  console.log('MenuComponent rerender')
   return (
     <StyledDiv
       bgImg={backgroundPic}
       className="menu-component background-img-styled"
     >
       <Row className="layout-wrapper">
-        <Col span={4}></Col>
-        <Col span={16}>
+        <Col xs={0} md={1} xl={4}></Col>
+        <Col xs={24} md={22} xl={16}>
           <Row className="content-wrapper">
             <Col className="title" span={24}>
               Menu
@@ -43,12 +42,12 @@ const MenuComponent = ({
             <Col className="menu-section" span={24}>
               <Row className="menu-wrapper">
                 {displayMenu.map((item, index) => (
-                  <Col key={index} className="menu-content" span={12}>
+                  <Col key={index} className="menu-content" xs={24} md={12}>
                     <Row>
-                      <Col span={7} className="menu-picture">
+                      <Col xs={24} xl={7} className="menu-picture">
                         <Image src={item.pic} />
                       </Col>
-                      <Col span={17} className="menu-description-section">
+                      <Col xs={24} xl={17} className="menu-description-section">
                         <Row>
                           <Col className="menu-name" span={12}>
                             {item.name}
@@ -81,7 +80,7 @@ const MenuComponent = ({
             </Col>
           </Row>
         </Col>
-        <Col span={4}></Col>
+        <Col xs={0} md={1} xl={4}></Col>
       </Row>
     </StyledDiv>
   );
@@ -90,9 +89,12 @@ const MenuComponent = ({
 const StyledDiv = styled.div`
   &.menu-component {
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
     padding: 25px 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(${(props) => props.bgImg});
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(${(props) => props.bgImg}) ; */
+      background-color: #191919;
     .action-section {
       margin-bottom: 45px;
     }
@@ -137,6 +139,8 @@ const StyledDiv = styled.div`
         }
       }
       .menu-picture {
+        display: flex;
+        justify-content: center;
         img {
           width: 100%;
           height: 180px;
@@ -146,6 +150,33 @@ const StyledDiv = styled.div`
     .title {
       font-size: 35px;
       text-align: center;
+    }
+    @media only screen and (max-width: 1200px) {
+      .action-button {
+        margin: 20px 25px !important ;
+      }
+    }
+    /* Laptops (1366px and up) */
+    @media only screen and (max-width: 1366px) {
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 768px) {
+    }
+
+    /* styles for smartphone screens in landscape orientation */
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+    }
+
+    /* styles for smartphone screens in portrait orientation */
+    @media only screen and (max-width: 480px) {
+      .action-button {
+        font-size: 20px !important;
+        /* margin: 20px !important ; */
+      }
     }
   }
 `;

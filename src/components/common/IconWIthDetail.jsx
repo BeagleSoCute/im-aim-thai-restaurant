@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Row, Col } from "antd";
 
-const IconWithDetails = ({data}) => {
+const IconWithDetails = ({ data }) => {
   return (
     <StyledDiv className="icon-with-details">
       <Row className="icon-with-details-wrapper">
@@ -10,7 +10,10 @@ const IconWithDetails = ({data}) => {
             key={item.id}
             isodd={index % 2 === 0 ? "true" : "false"}
             className="each-icon-with-details"
-            span={4}
+            xs={24}
+            lg={10}
+            xl={4}
+            // xxl={4}
           >
             <Col className="icon-with-details-icon" span={24}>
               <img src={item.icon} alt={item.title} />
@@ -44,7 +47,7 @@ const StyledDiv = styled.div`
       }
     }
     .each-icon-with-details {
-      margin: 0 25px;
+      margin: 10px 25px;
       width: 100%;
       padding: 50px;
     }
@@ -59,8 +62,28 @@ const StyledCol = styled(Col)`
   &.each-icon-with-details {
     margin: 0 25px;
     width: 100%;
-    background-color: ${(props) => (props.isodd === "true" ? "#131414" : "#121111")};
+    background-color: ${(props) =>
+      props.isodd === "true" ? "#131414" : "#121111"};
     padding: 50px;
+
+    /* Laptops (1366px and up) */
+    @media only screen and (max-width: 1366px) {
+    }
+    /* styles for tablet screens in landscape orientation */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    /* styles for tablet screens in portrait orientation */
+    @media only screen and (max-width: 768px) {
+    }
+
+    /* styles for smartphone screens in landscape orientation */
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+    }
+
+    /* styles for smartphone screens in portrait orientation */
+    @media only screen and (max-width: 480px) {
+    }
   }
 `;
 
