@@ -61,7 +61,7 @@ const FoodDetailsContent = ({
           </Col>
         )}
         <Col className="menu-detail" span={12}>
-          <img className="normal-img" src={details.pic} />
+          <img alt="pic" className="normal-img" src={details.pic} />
           <Col className="menu-detail-name title" span={24}>
             {details.name}
           </Col>

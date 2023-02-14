@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import styled from "styled-components";
-import { Layout, Menu, Spin } from "antd";
+import { Layout, Menu, Spin, Row, Col } from "antd";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "contexts/app.context";
 import { checkIsAuth } from "helpers/auth.helper";
 import { Outlet } from "react-router-dom";
+import logo from "assets/common/logo.png";
 
 const { Header } = Layout;
 
@@ -12,7 +13,6 @@ const authenMenu = [
   { key: 1, label: "Home", path: "/" },
   { key: 2, label: "Menu", path: "/menu" },
   { key: 3, label: "Contact Us", path: "/contact" },
-
   // { key: 2, label: "Dashboard", path: "/dashboard" },
   // { key: 3, label: "Profile", path: "/profile" },
   // { key: 4, label: "Logout", path: "/logout" },
@@ -37,16 +37,30 @@ const AppLayout = () => {
   };
 
   return (
-    <StyledLayout className="app-layout">
-      <Header>
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["0"]}
-          onClick={handleOnClick}
-          items={isAuth ? authenMenu : notAuthenMenu}
-        />
+    <StyledLayout className="app-layout ">
+      <Header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 1,
+          backgroundColor: "black",
+          color: "white",
+        }}
+      >
+        <Row className="wrapper">
+          <Col xs={10} sm={6} md={4} xl={2} className="logo-wrapper">
+            <img src={logo} alt="logo" />
+          </Col>
+          <Col xs={14} sm={18} md={20} xl={22} className="menu-links">
+            <Menu
+              theme="blacks"
+              mode="horizontal"
+              defaultSelectedKeys={["0"]}
+              onClick={handleOnClick}
+              items={isAuth ? authenMenu : notAuthenMenu}
+            />
+          </Col>
+        </Row>
       </Header>
       <div className="content">
         {loading ? (
@@ -83,11 +97,18 @@ const StyledLayout = styled(Layout)`
     .ant-spin {
       margin: auto;
     }
-    .header {
-      background: #282a3a;
-      .link {
-        color: white;
+    .wrapper {
+      height: 100% !important;
+    }
+    .logo-wrapper {
+      height: 100% !important;
+      img {
+        width: 100%;
+        height: 100%;
       }
+    }
+    li {
+      color: white;
     }
     .footer {
       display: flex;
@@ -100,28 +121,13 @@ const StyledLayout = styled(Layout)`
         margin: auto 0px;
       }
     }
-    /* Laptops (1366px and up) */
-    @media only screen and (max-width: 1366px) {
-    }
-    /* styles for tablet screens in landscape orientation */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    }
-
-    /* styles for tablet screens in portrait orientation */
-    @media only screen and (max-width: 768px) {
-    }
-
-    /* styles for smartphone screens in landscape orientation */
-    @media only screen and (min-width: 480px) and (max-width: 720px) {
-    }
-
     /* styles for smartphone screens in portrait orientation */
     @media only screen and (max-width: 480px) {
-      .footer{
+      .logo-wrapper {
+        height: 100% !important;
+      }
+      .footer {
         height: 80px;
-        p{
-          /* align-items: center; */
-        }
       }
     }
   }

@@ -41,13 +41,13 @@ const StoryTellingSection = () => {
         <Col className="picture-area" xs={24} lg={14} xl={17}>
           <Row>
             <Col span={8}>
-              <img className="pic1" src={storyPic1} />
+              <img alt="pic1" className="pic1" src={storyPic1} />
             </Col>
             <Col span={8}>
-              <img className="pic2" src={storyPic3} />
+              <img alt="pic2" className="pic2" src={storyPic3} />
             </Col>
             <Col span={8}>
-              <img className="pic3" src={storyPic2} />
+              <img alt="pic3" className="pic3" src={storyPic2} />
             </Col>
           </Row>
         </Col>

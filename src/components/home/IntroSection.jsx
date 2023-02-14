@@ -72,7 +72,6 @@ const StyledBackgroundImg = styled.div`
         margin-top: 15px !important;
       }
     }
-
     /* styles for tablet screens in portrait orientation */
     @media only screen and (max-width: 768px) {
       h1.intro-title {
@@ -85,11 +84,6 @@ const StyledBackgroundImg = styled.div`
         margin-top: 20px;
       }
     }
-
-    /* styles for smartphone screens in landscape orientation */
-    @media only screen and (min-width: 480px) and (max-width: 720px) {
-    }
-
     /* styles for smartphone screens in portrait orientation */
     @media only screen and (max-width: 480px) {
       .content-wrapper {

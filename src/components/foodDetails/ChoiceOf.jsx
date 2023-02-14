@@ -16,7 +16,7 @@ const ChoiceOf = ({ data, selectedChoice, handleChange }) => {
             xl={4}
           >
             <Col className="icon" span={24}>
-              <img src={item.icon} />
+              <img alt="icon" src={item.icon} />
             </Col>
             <Col className="label" span={24}>
               {item.label}

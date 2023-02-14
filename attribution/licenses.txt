@@ -17,3 +17,4 @@
 <a href="https://www.flaticon.com/free-icons/tofu" title="tofu icons">Tofu icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/fish" title="fish icons">Fish icons created by Smashicons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/prawn" title="Prawn icons">Prawn icons created by andinur - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Victoruler - Flaticon</a>

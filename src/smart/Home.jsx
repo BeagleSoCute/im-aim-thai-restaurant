@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from "react";
+import React, { useCallback } from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import IntroSection from "components/home/IntroSection";
@@ -19,9 +19,8 @@ const SecondSectionMemo = React.memo(SecondSection);
 const SpecialMenuMemo = React.memo(SpecialMenu);
 const ChefInfoMemo = React.memo(ChefInfo);
 const StoryTellingSectionMemo = React.memo(StoryTellingSection);
-const ReviewSectionMemo = React.memo(ReviewSection)
-const ContactSectionMemo = React.memo(ContactSection)
-
+const ReviewSectionMemo = React.memo(ReviewSection);
+const ContactSectionMemo = React.memo(ContactSection);
 
 const Home = () => {
   const [displayMenu, setDisplayMenu] = useState(menuDetails);
@@ -40,6 +39,7 @@ const Home = () => {
   const handleChangeMenuType = useCallback((type) => {
     handleChangeMenu(type);
     smoothScroll("menu-section");
+    // eslint-disable-next-line
   }, []);
   return (
     <StyledDiv clssName="home">
