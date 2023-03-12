@@ -1,5 +1,17 @@
 import styled from "styled-components";
 import { Row, Col } from "antd";
+import PropTypes from "prop-types";
+
+const propTypes = {
+  data: PropTypes.array,
+  selectedChoice: PropTypes.object,
+  handleChange: PropTypes.func,
+};
+const defaultProps = {
+  data: [],
+  selectedChoice: {},
+  handleChange: () => {},
+}
 
 const ChoiceOf = ({ data, selectedChoice, handleChange }) => {
   return (
@@ -50,4 +62,6 @@ const StyledCol = styled(Col)`
   }
 `;
 
+ChoiceOf.propTypes = propTypes;
+ChoiceOf.defaultProps = defaultProps;
 export default ChoiceOf;

@@ -45,19 +45,19 @@ const MenuComponent = ({
                 {displayMenu.map((item, index) => (
                   <Col key={index} className="menu-content" xs={24} md={12}>
                     <Row>
-                      <Col xs={24} xl={7} className="menu-picture">
+                      <Col xs={24} xl={10} className="menu-picture">
                         <Image src={item.pic} />
                       </Col>
-                      <Col xs={24} xl={17} className="menu-description-section">
+                      <Col xs={24} xl={14} className="menu-description-section">
                         <Row>
-                          <Col className="menu-name" span={12}>
+                          <Col className="menu-name" span={14}>
                             {item.name}
                           </Col>
-                          <Col className="menu-price gold-color" span={12}>
-                           { menuChoiceOf[item.type] ? 'Price up to a selection'  :'$'+item.price}
+                          <Col className="menu-price gold-color" span={10}>
+                           { menuChoiceOf[item.type] ? 'Select Choice'  :'$'+item.price}
                           </Col>
                           <Col className="menu-description" span={24}>
-                            <p className="nomal-text">{item.description}</p>
+                            <p className="normal-text">{item.description}</p>
                           </Col>
                           <Col className="menu-button" span={24}>
                             <Button
@@ -93,8 +93,6 @@ const StyledDiv = styled.div`
     background-size: cover;
     background-position: center;
     padding: 25px 0px;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(${(props) => props.bgImg}) ; */
       background-color: #191919;
     .action-section {
       margin-bottom: 45px;
@@ -102,18 +100,15 @@ const StyledDiv = styled.div`
     .content-wrapper {
       width: 100%;
       height: 100%;
-      //   background-color: green;
     }
     .action-wrapper {
       padding: 25px;
       border-top: 2px solid black;
       border-bottom: 2px solid black;
       justify-content: center;
-      //   background-color: blue;
       .action-button {
-        // background-color: pink;
         cursor: pointer;
-        margin: auto 25px;
+        margin: 10px 25px;
         font-size: 25px;
       }
       .action-button.is-selected {
@@ -121,13 +116,11 @@ const StyledDiv = styled.div`
       }
     }
     .menu-section {
-      //   background-color: orange;
       .menu-content {
         margin-bottom: 45px;
       }
       .menu-description-section {
         padding: 10px 20px;
-        // background-color: black;
         .menu-description {
           margin-top: 5px;
         }
@@ -143,7 +136,7 @@ const StyledDiv = styled.div`
         display: flex;
         justify-content: center;
         img {
-          width: 100%;
+          width: 180px;
           height: 180px;
         }
       }
@@ -163,6 +156,10 @@ const StyledDiv = styled.div`
     }
     /* Laptops (1366px and up) */
     @media only screen and (max-width: 1366px) {
+      .menu-price{
+        margin: auto 0px;
+        font-size: 12px!important;
+      }
     }
     /* styles for tablet screens in landscape orientation */
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -170,7 +167,7 @@ const StyledDiv = styled.div`
 
     /* styles for tablet screens in portrait orientation */
     @media only screen and (max-width: 992px) {
-     
+    
     }
 
     /* styles for smartphone screens in landscape orientation */
