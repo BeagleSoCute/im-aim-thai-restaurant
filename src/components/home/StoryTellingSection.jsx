@@ -14,15 +14,13 @@ const StoryTellingSection = () => {
               Our Story
             </Col>
             <Col className="sub-title" span={24}>
-              Every Flavor Tells a Story
+            The Heart and Soul of Thai Cuisine at Im-Aim
             </Col>
             <Col className="description" span={24}>
               <p>
-                Lorem Ipsum is simply dummy text of the printingand typesetting
-                industry lorem Ipsum has been the industrys standard dummy text
-                ever since the when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book It has survived not
-                only five centuries, but also the leap into.
+              At Im-Aim, we believe every flavor tells a story, transporting patrons to the heart of Thailand through our authentic cuisine. Our expert chefs artfully balance the essential Thai flavors: sweet, sour, salty, spicy, and bitter. Each dish captures the diverse culinary customs and regional influences that define this vibrant cuisine.
+
+Join us at Im-Aim, where every meal is a journey through the rich tapestry of flavors that make Thai food unforgettable. Savor the tastes of Thailand in every delicious bite and create lasting memories with us.
               </p>
             </Col>
             <Col className="phone-title" span={24}>
