@@ -42,25 +42,25 @@ export const choiceOf2 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "14.00",
+    price: "15.00",
   },
   {
     id: 2,
     icon: require("assets/icon/vegetable.png"),
     label: "Vegetable",
-    price: "12.00",
+    price: "13.50",
   },
   {
     id: 3,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
-    price: "13.00",
+    price: "14.00",
   },
   {
     id: 4,
     icon: require("assets/icon/seafood.png"),
     label: "Mix Seafood",
-    price: "15.00",
+    price: "15.50",
   },
   {
     id: 5,
@@ -99,19 +99,19 @@ export const choiceOf3 = [
     id: 5,
     icon: require("assets/icon/fish.png"),
     label: "Fish Fillets or Squid",
-    price: "24.00",
+    price: "24.90",
   },
   {
     id: 6,
     icon: require("assets/icon/seafood.png"),
     label: "Mixed Seafood",
-    price: "25.90",
+    price: "24.90",
   },
   {
     id: 7,
     icon: require("assets/icon/fried-shrimp.png"),
     label: "Prawn Cutlets",
-    price: "14.00",
+    price: "25.90",
   },
   {
     id: 8,
@@ -133,35 +133,35 @@ export const choiceOf4 = [
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
     value: 1,
-    price: "22.90",
+    price: "20.90",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
     value: 2,
-    price: "22.90",
+    price: "20.90",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
     value: 3,
-    price: "22.90",
+    price: "20.90",
   },
   {
     id: 4,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
     value: 4,
-    price: "26.90",
+    price: "22.90",
   },
   {
     id: 5,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
     value: 5,
-    price: "24.90",
+    price: "18.90",
   },
 ];
 
@@ -192,7 +192,7 @@ export const choiceOf5 = [
 export const menuDetails = [
   {
     id: 1,
-    pic:  require("assets/foods/pic1.jpg") ,
+    pic: require("assets/foods/pic1.jpg"),
     name: "Tomyum",
     type: "soup",
     price: "20.00",
@@ -202,7 +202,7 @@ export const menuDetails = [
 
   {
     id: 2,
-    pic:  require("assets/foods/pic2.jpg"),
+    pic: require("assets/foods/pic2.jpg"),
     name: "Green curry",
     type: "curry",
     price: "20.00",
@@ -212,8 +212,9 @@ export const menuDetails = [
 
   {
     id: 3,
-    pic:  require("assets/foods/pic3.jpg"),
+    pic: require("assets/foods/pic3.jpg"),
     name: "Spring roll",
+    amount: 4,
     type: "appetizers",
     price: "10.00",
     description: "Vegetables, Rice vermicelli",
@@ -221,7 +222,7 @@ export const menuDetails = [
 
   {
     id: 4,
-    pic:  require("assets/foods/pic4.jpg"),
+    pic: require("assets/foods/pic4.jpg"),
     name: "Deep fry tofu",
     type: "appetizers",
     price: "10.00",
@@ -230,8 +231,9 @@ export const menuDetails = [
 
   {
     id: 5,
-    pic:  require("assets/foods/pic5.jpg"),
+    pic: require("assets/foods/pic5.jpg"),
     name: "Pastry prawn",
+    amount: 4,
     type: "appetizers",
     price: "11.00",
     description: "Deep fry prawn pastry with sweet chili sauce",
@@ -239,8 +241,9 @@ export const menuDetails = [
 
   {
     id: 6,
-    pic:  require("assets/foods/pic6.jpg"),
+    pic: require("assets/foods/pic6.jpg"),
     name: "Curry puff",
+    amount: 4,
     type: "appetizers",
     price: "12.00",
     description: "Mince chicken with curry paste, potato, Onion",
@@ -248,8 +251,9 @@ export const menuDetails = [
 
   {
     id: 7,
-    pic:  require("assets/foods/pic7.jpeg"),
+    pic: require("assets/foods/pic7.jpeg"),
     name: "Satay chicken",
+    amount: 4,
     type: "appetizers",
     price: "12.00",
     description: " Thai BBQ chickenwith satay sauce",
@@ -257,8 +261,9 @@ export const menuDetails = [
 
   {
     id: 8,
-    pic:  require("assets/foods/pic8.jpg"),
+    pic: require("assets/foods/pic8.jpg"),
     name: "Money bag",
+    amount: 5,
     type: "appetizers",
     price: "11.00",
     description:
@@ -267,8 +272,9 @@ export const menuDetails = [
 
   {
     id: 9,
-    pic:  require("assets/foods/pic9.jpg"),
+    pic: require("assets/foods/pic9.jpg"),
     name: "Chicken wing",
+    amount: 8,
     type: "appetizers",
     price: "15.00",
     description: "Chicken wing 8 piece coated with bbq sauce",
@@ -276,9 +282,10 @@ export const menuDetails = [
 
   {
     id: 10,
-    pic:  require("assets/foods/pic10.jpg"),
-    name: "Mixed appetizer",
-    type: "appetizer",
+    pic: require("assets/foods/pic10.jpg"),
+    name: "Mixed appetizers",
+    amount: 5,
+    type: "appetizers",
     price: "14.00",
     description:
       " Mixed appetizers 5 pcs (spring roll, money bag, puff, satay, pastry prawn)",
@@ -415,8 +422,9 @@ export const menuDetails = [
     id: 24,
     pic: require("assets/foods/pic24.jpg"),
     name: "Sizzling vegetables only with cashewnut",
+    noChoiceOfMeat: true,
     type: "sizzling",
-    price: "",
+    price: "20.00",
     description:
       "Stir fried chili soybean oil with vegetables, mushroom, capsicum, baby corn top with cashew nut",
   },
@@ -655,7 +663,7 @@ export const menuDetails = [
   {
     id: 49,
     pic: require("assets/foods/pic49.jpg"),
-    name: "Hinanese chicken on ginger rice",
+    name: "Hainanese chicken on ginger rice",
     type: "signatureDishes",
     price: "22.90",
     description: "Boiled chicken top on ginger rice with special sauce on side",
@@ -685,14 +693,13 @@ export const menuDetails = [
     pic: require("assets/foods/pic52.jpg"),
     name: "Waffle with ice-cream",
     type: "dessert",
-    price: "11.00",
+    price: "12.00",
     description: "choice of caramel or Chocolate and Crushed sauce",
   },
-
   {
     id: 53,
     pic: require("assets/foods/pic53.jpg"),
-    name: "ice-cream sunday",
+    name: "ice-cream sundae",
     type: "dessert",
     price: "10.00",
     description:
@@ -710,6 +717,12 @@ export const menuDetails = [
 ];
 
 export const menuTypes = [
+  {
+    id: 8,
+    type: "appetizers",
+    label: "Appetizers",
+    pic: require("assets//menu_types/fried_chicken.jpg"),
+  },
   {
     id: 1,
     type: "soup",
@@ -744,7 +757,7 @@ export const menuTypes = [
     id: 6,
     type: "rice",
     label: "Rice",
-    pic:  require("assets/foods/pic33.jpg"),
+    pic: require("assets/foods/pic33.jpg"),
   },
   {
     id: 7,
@@ -752,12 +765,7 @@ export const menuTypes = [
     label: "Noodle",
     pic: require("assets/menu_types/pad_thai.jpg"),
   },
-  {
-    id: 8,
-    type: "appetizers",
-    label: "Appetizers",
-    pic: require("assets//menu_types/fried_chicken.jpg"),
-  },
+
   {
     id: 9,
     type: "dessert",
@@ -772,7 +780,6 @@ export const menuTypes = [
   },
 ];
 
-
 export const showMenuTypes = [
   { id: 0, type: "all", label: "All" },
   ...menuTypes,
@@ -784,6 +791,6 @@ export const menuChoiceOf = {
   curry: choiceOf3,
   wok: choiceOf3,
   rice: choiceOf4,
-  noodle:choiceOf4,
+  noodle: choiceOf4,
   signatureDishes: choiceOf3,
 };

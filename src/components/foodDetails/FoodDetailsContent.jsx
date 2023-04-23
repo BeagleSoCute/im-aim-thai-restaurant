@@ -19,6 +19,7 @@ const defaultProps = {
   },
   details: {
     id: 0,
+    noChoiceOfMeat: false,
     pic: "",
     type: "",
     name: "",
@@ -38,7 +39,7 @@ const FoodDetailsContent = ({
   handleChange,
 }) => {
   const isChoiceOf = choiceOf.length !== 0;
-  const isAlreadySelectChoice = selectedChoice.price
+  const isAlreadySelectChoice =  details.noChoiceOfMeat ? details.price : selectedChoice.price 
     ? " $" + selectedChoice.price
     : " Please select a choice of meat";
   const showPrice = isChoiceOf ? isAlreadySelectChoice : " $" + details.price;
@@ -50,7 +51,7 @@ const FoodDetailsContent = ({
             <p>{type.label}</p>
           </StyledRow>
         </Col>
-        {isChoiceOf && (
+        {isChoiceOf && !details.noChoiceOfMeat && (
           <Col span={24}>
             <ChoiceOf
               data={choiceOf}
@@ -64,9 +65,16 @@ const FoodDetailsContent = ({
           <img alt="pic" className="normal-img " src={details.pic} />
           <Col className="menu-detail-name title" span={24}>
             {details.name}
+
+          </Col>{
+            details.amount &&
+            <Col className="menu-detail-description normal-text" span={24}>
+           <p className="amount-header">Amount</p> <p>{details.amount} pcs</p>
           </Col>
+          }
+          
           <Col className="menu-detail-description normal-text" span={24}>
-            {details.description}
+           <p className="des-header">Description</p> <p>{details.description}</p>
           </Col>
           <Col className="menu-detail-price" span={24}>
             Price:
@@ -90,6 +98,10 @@ const StyledDiv = styled.div`
       .menu-detail-price {
         margin: 25px 0px;
         font-size: 25px;
+      }
+      .des-header,.amount-header {
+        font-size: 20px;
+        font-weight: bold;
       }
       img {
         width: 100%;

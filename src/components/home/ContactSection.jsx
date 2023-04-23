@@ -32,7 +32,6 @@ const ContactSection = ({ contactDetails }) => {
 };
 const StyledDiv = styled.div`
   &.contact-section {
-    padding: 50px;
     min-height: calc(100vh - 50px);
     text-align: center;
     .contact-section-layout {

@@ -17,8 +17,6 @@ const MenuComponent = ({
       className="menu-component background-img-styled"
     >
       <Row className="layout-wrapper">
-        <Col xs={0} md={1} xl={4}></Col>
-        <Col xs={24} md={22} xl={16}>
           <Row className="content-wrapper">
             <Col className="title" span={24}>
               Menu
@@ -53,8 +51,12 @@ const MenuComponent = ({
                           <Col className="menu-name" span={14}>
                             {item.name}
                           </Col>
+                          { item.amount &&
+                           <Col className="menu-name" span={14}>
+                           ( {item.amount} pcs )
+                          </Col>}
                           <Col className="menu-price gold-color" span={10}>
-                           { menuChoiceOf[item.type] ? 'Select Choice'  :'$'+item.price}
+                           { menuChoiceOf[item.type] && !item.noChoiceOfMeat ? 'Select Choice'  :'$'+item.price}
                           </Col>
                           <Col className="menu-description" span={24}>
                             <p className="normal-text">{item.description}</p>
@@ -80,8 +82,6 @@ const MenuComponent = ({
               </Row>
             </Col>
           </Row>
-        </Col>
-        <Col xs={0} md={1} xl={4}></Col>
       </Row>
     </StyledDiv>
   );
@@ -92,7 +92,7 @@ const StyledDiv = styled.div`
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    padding: 25px 0px;
+    padding: 25px 10px;
       background-color: #191919;
     .action-section {
       margin-bottom: 45px;

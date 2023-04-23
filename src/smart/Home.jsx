@@ -19,7 +19,7 @@ const SecondSectionMemo = React.memo(SecondSection);
 const SpecialMenuMemo = React.memo(SpecialMenu);
 const ChefInfoMemo = React.memo(ChefInfo);
 const StoryTellingSectionMemo = React.memo(StoryTellingSection);
-const ReviewSectionMemo = React.memo(ReviewSection);
+// const ReviewSectionMemo = React.memo(ReviewSection);
 const ContactSectionMemo = React.memo(ContactSection);
 
 const Home = () => {
@@ -69,9 +69,9 @@ const Home = () => {
       <div className="other-section">
         <ChefInfoMemo staffsData={staffs} strengthData={strengthData} />
       </div>
-      <div className="other-section">
+      {/* <div className="other-section">
         <ReviewSectionMemo />
-      </div>
+      </div> */}
       <div id="contact-section" className="other-section">
         <ContactSectionMemo contactDetails={contactDetails} />
       </div>
