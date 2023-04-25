@@ -30,24 +30,24 @@ export const contactDetails = [
     id: 1,
     icon: require("assets/icon/clock.png"),
     title: "Opening hours",
-    description: "10.00 am - 9.30 pm",
+    description: "Wed to Sun 11:30am - 2.30pm and 4.00pm -9.00pm  / Mon-Tues 4.00pm-9.00pm",
   },
   {
     id: 2,
     icon: require("assets/icon/facebook.png"),
     title: "Facebook",
-    description: "facebook.com",
+    description: "Im-Aim thai cuisine",
   },
   {
     id: 3,
     icon: require("assets/icon/gmail.png"),
     title: "Email",
-    description: "gmail.com",
+    description: "im.aim.thaicuisinegmail.com",
   },
   {
     id: 4,
     icon: require("assets/icon/smartphone.png"),
     title: "Phone number",
-    description: "0225099853",
+    description: "062429002",
   },
 ];

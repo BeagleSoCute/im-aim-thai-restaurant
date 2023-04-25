@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import backgroundPic from "assets/background/gray_background.jpg";
-import specialDishImg from "assets/common/special_dish.jpg";
+import specialDishImg from "assets/foods/pic44.jpg";
 import { Row, Col, Button } from "antd";
-
+import { useNavigate } from "react-router-dom";
 const SpecialMenu = () => {
+  const navigate = useNavigate();
   return (
     <StyledDiv
       bgImg={backgroundPic}
@@ -19,19 +20,19 @@ const SpecialMenu = () => {
               <h2 className="subtitle-text">SPECIAL DISH</h2>
             </Col>
             <Col span={24} className="title">
-              <h1 className="special-menu-title">Pad kra pao</h1>
+              <h1 className="special-menu-title">Green Curry Salmon</h1>
             </Col>
             <Col span={24} className="description nomal-text">
               <p>
-                Lorem Ipsum is simply dummy text of the printingand typesetting
-                industry lorem Ipsum has been the industrys standard dummy text
-                ever since the when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book It has survived not
-                only five centuries, but also the leap into.
+              Green Curry Salmon is an exquisite, mouthwatering Thai dish that artfully combines the tender, flaky texture of succulent salmon with the rich, fragrant flavors of traditional Thai green curry. This dish celebrates the delicate balance of sweet, spicy, and savory notes that Thai cuisine is renowned for, creating a symphony of taste sensations that will leave your taste buds dancing with delight.
               </p>
             </Col>
             <Col className="button-action" span={24}>
-              <Button size="large" ghost className="view-menu-button">
+              <Button  onClick={() =>
+                                navigate(
+                                  `/menu-details/signatureDishes/${44}`
+                                )
+                              } size="large" ghost className="view-menu-button">
                 See this Menu
               </Button>
             </Col>
