@@ -27,13 +27,13 @@ Join us at Im-Aim, where every meal is a journey through the rich tapestry of fl
               Call to order the best meal
             </Col>
             <Col className="phone-number" span={24}>
-              022 5099 759
+            06 2429 002
             </Col>
-            <Col className="button-action" span={24}>
+            {/* <Col className="button-action" span={24}>
               <Button size="large" ghost className="view-menu-button">
                 Read More
               </Button>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
         <Col className="picture-area" xs={24} lg={14} xl={17}>

@@ -548,9 +548,10 @@ export const menuDetails = [
   {
     id: 37,
     pic: require("assets/foods/pic37.jpg"),
+    noChoiceOfMeat: true,
     name: "Basil fried rice pork belly",
     type: "rice",
-    price: "24.90",
+    price: "20.90",
     description: "Onion, Bean, MIX Vegetables Basil Sauce",
   },
 
@@ -614,6 +615,7 @@ export const menuDetails = [
 
   {
     id: 44,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic44.jpg"),
     name: "Green curry salmon",
     type: "signatureDishes",
@@ -624,6 +626,7 @@ export const menuDetails = [
 
   {
     id: 45,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic45.jpg"),
     name: "Deep fry chicken with garlic & pepper sauce",
     type: "signatureDishes",
@@ -634,6 +637,7 @@ export const menuDetails = [
 
   {
     id: 46,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic46.jpg"),
     name: "Greilled salmon with basil sauce",
     type: "signatureDishes",
@@ -643,6 +647,7 @@ export const menuDetails = [
 
   {
     id: 47,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic47.jpg"),
     name: "Duck on rice side with vegetables",
     type: "signatureDishes",
@@ -652,6 +657,7 @@ export const menuDetails = [
 
   {
     id: 48,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic48.jpg"),
     name: "Pork belly on rice side with vegetables",
     type: "signatureDishes",
@@ -662,6 +668,7 @@ export const menuDetails = [
 
   {
     id: 49,
+    noChoiceOfMeat: true,
     pic: require("assets/foods/pic49.jpg"),
     name: "Hainanese chicken on ginger rice",
     type: "signatureDishes",
@@ -690,7 +697,7 @@ export const menuDetails = [
 
   {
     id: 52,
-    pic: require("assets/foods/pic52.jpg"),
+    pic: require("assets/foods/pic55.jpg"),
     name: "Waffle with ice-cream",
     type: "dessert",
     price: "12.00",
