@@ -2,7 +2,7 @@ import styled from "styled-components";
 import storyPic1 from "assets/story/story1.jpg";
 import storyPic2 from "assets/story/story2.jpg";
 import storyPic3 from "assets/story/story3.jpg";
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 
 const StoryTellingSection = () => {
   return (
