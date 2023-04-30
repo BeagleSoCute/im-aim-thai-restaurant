@@ -42,7 +42,7 @@ export const contactDetails = [
     id: 3,
     icon: require("assets/icon/gmail.png"),
     title: "Email",
-    description: "im.aim.thaicuisinegmail.com",
+    description: "im.aim.thaicuisine@gmail.com",
   },
   {
     id: 4,
