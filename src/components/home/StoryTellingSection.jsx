@@ -8,7 +8,7 @@ const StoryTellingSection = () => {
   return (
     <StyledDiv className="story-telling-section">
       <Row className="wrapper">
-        <Col className="text-area" xs={24} lg={10} xl={6}>
+        <Col className="text-area" xs={24} lg={10} xl={9}>
           <Row>
             <Col className="title gold-color" span={24}>
               Our Story
@@ -36,7 +36,7 @@ Join us at Im-Aim, where every meal is a journey through the rich tapestry of fl
             </Col> */}
           </Row>
         </Col>
-        <Col className="picture-area" xs={24} lg={14} xl={17}>
+        <Col className="picture-area" xs={24} lg={14} xl={14}>
           <Row>
             <Col span={8}>
               <img alt="pic1" className="pic1" src={storyPic1} />
