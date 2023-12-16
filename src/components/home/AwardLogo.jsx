@@ -21,7 +21,7 @@ const AwardLogo = () => {
         </svg>
       </div>
       <div className="sq_year">2023</div>
-      <a href="https://restaurantguru.com/Im-Aim-Thai-Cuisine-Dannevirke-Dannevirke" className="sq_center f8" target="_blank">
+      <a href="https://restaurantguru.com/Im-Aim-Thai-Cuisine-Dannevirke-Dannevirke" className="sq_center f8" target="">
         Im-Aim Thai Cuisine - Dannevirke
       </a>
       <div className="arc-heading arc-heading__bottom">
@@ -31,7 +31,7 @@ const AwardLogo = () => {
           </defs>
           <text className="arc-heading__subheading" fill="#000" textAnchor="middle">
             <textPath startOffset="50%" xlinkHref="#subheading-arc">
-              <a href="https://restaurantguru.com" target="_blank">Restaurant Guru</a>
+              <a href="https://restaurantguru.com" target="">Restaurant Guru</a>
             </textPath>
           </text>
         </svg>
