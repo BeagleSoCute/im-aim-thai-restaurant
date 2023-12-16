@@ -13,6 +13,7 @@ import { menuDetails, menuTypes, showMenuTypes } from "data/menu";
 import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
 import { smoothScroll } from "services/common.services";
+import AwardLogo from "components/home/AwardLogo";
 
 const IntroSectionMemo = React.memo(IntroSection);
 const SecondSectionMemo = React.memo(SecondSection);
@@ -42,9 +43,15 @@ const Home = () => {
     // eslint-disable-next-line
   }, []);
   return (
-    <StyledDiv clssName="home">
+    <StyledDiv className="home">
       <div className="first-section">
-        <IntroSectionMemo clssName="intro-section" />
+        <IntroSectionMemo className="intro-section" />
+      </div>
+      <div className="award-section">
+        <h1 className=" header-text">Award by</h1>
+        <div className="logo">
+          <AwardLogo />
+        </div>
       </div>
       <div className="other-section">
         <SecondSectionMemo
@@ -81,6 +88,20 @@ const Home = () => {
 
 const StyledDiv = styled.div`
   &.home {
+    .award-section {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      width: 100%;
+      background-color: #121111;
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0px;
+      }
+    }
   }
 `;
 
