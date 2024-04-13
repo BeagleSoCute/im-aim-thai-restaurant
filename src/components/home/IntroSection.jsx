@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import pic from "assets/home/pad_thai.jpg";
-import { Helmet } from "react-helmet";
 const IntroSection = () => {
   return (
     <StyledBackgroundImg
@@ -12,25 +11,19 @@ const IntroSection = () => {
         <h2 className="intro-subtitle">
           Come with family & feel the joy of traditional Thai food
         </h2>
-        <Helmet>
-          <script
-            src="https://www.fbgcdn.com/embedder/js/ewm2.js"
-            defer
-            async
-          ></script>
-        </Helmet>
+       
 
         <div className="btn-section">
           <span
-            class="glf-button"
+            className="glf-button"
             data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
             data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
           >
-            See MENU & Order
+            See MENU & Online Ordering
           </span>
 
           <span
-            class="glf-button reservation"
+            className="glf-button reservation"
             data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
             data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
             data-glf-reservation="true"

@@ -14,6 +14,7 @@ import { strengthData, contactDetails } from "data/common";
 import { staffs } from "data/personal";
 import { smoothScroll } from "services/common.services";
 import AwardLogo from "components/home/AwardLogo";
+import { Helmet } from "react-helmet";
 
 const IntroSectionMemo = React.memo(IntroSection);
 const SecondSectionMemo = React.memo(SecondSection);
@@ -44,6 +45,13 @@ const Home = () => {
   }, []);
   return (
     <StyledDiv className="home">
+       <Helmet>
+          <script
+            src="https://www.fbgcdn.com/embedder/js/ewm2.js"
+            defer
+            async
+          ></script>
+        </Helmet>
       <div className="first-section">
         <IntroSectionMemo className="intro-section" />
       </div>

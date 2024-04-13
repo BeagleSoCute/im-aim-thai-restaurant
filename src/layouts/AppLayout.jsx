@@ -13,9 +13,7 @@ const authenMenu = [
   { key: 1, label: "Home", path: "/" },
   { key: 2, label: "Menu", path: "/menu" },
   { key: 3, label: "Contact Us", path: "/contact" },
-  // { key: 2, label: "Dashboard", path: "/dashboard" },
-  // { key: 3, label: "Profile", path: "/profile" },
-  // { key: 4, label: "Logout", path: "/logout" },
+
 ];
 const notAuthenMenu = [
   { key: 1, label: "Home", path: "/" },
@@ -32,6 +30,15 @@ const AppLayout = () => {
   const navigate = useNavigate();
   const handleOnClick = (selected) => {
     const menus = isAuth ? authenMenu : notAuthenMenu;
+    if (selected.key === 4) {
+      return (
+        <span
+          data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
+          data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
+          data-glf-reservation="true"
+        ></span>
+      );
+    }
     const result = menus.find((menu) => menu.key === parseInt(selected.key));
     navigate(result.path);
   };
@@ -59,6 +66,23 @@ const AppLayout = () => {
               onClick={handleOnClick}
               items={isAuth ? authenMenu : notAuthenMenu}
             />
+            <div className="order-and-booking-section">
+              <span
+                className="glf-button"
+                data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
+                data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
+              >
+                Online Order
+              </span>
+              <span
+                className="glf-button reservation "
+                data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
+                data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
+                data-glf-reservation="true"
+              >
+                Booking
+              </span>
+            </div>
           </Col>
         </Row>
       </Header>
@@ -85,6 +109,15 @@ const AppLayout = () => {
 
 const StyledLayout = styled(Layout)`
   &.app-layout {
+    .order-and-booking-section {
+      position: absolute;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      .glf-button {
+        padding: 5px;
+      }
+    }
     height: 100%;
     .content {
       height: 100%;
@@ -128,6 +161,13 @@ const StyledLayout = styled(Layout)`
       }
       .footer {
         height: 80px;
+      }
+      .order-and-booking-section {
+        .glf-button {
+          padding: 5px;
+          /* height: 40px; */
+          font-size:12px;
+        }
       }
     }
   }
