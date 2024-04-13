@@ -30,7 +30,7 @@ export const contactDetails = [
     id: 1,
     icon: require("assets/icon/clock.png"),
     title: "Opening hours",
-    description: "Wed to Sun 11:30am - 2.30pm and 4.00pm -9.00pm  / Tues 4.00pm-9.00pm, Mon Closed",
+    description: "Wed to Sun 12:00am - 14:30pm and 16:30pm - 21:00pm  / Tues 16.30pm - 21:00pm, Mon Closed",
   },
   {
     id: 2,
