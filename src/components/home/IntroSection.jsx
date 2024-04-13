@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import pic from "assets/home/pad_thai.jpg";
-import { Button } from "antd";
-import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const IntroSection = () => {
-  const navigate = useNavigate();
   return (
     <StyledBackgroundImg
       className="intro-section background-img-styled "
@@ -14,14 +12,32 @@ const IntroSection = () => {
         <h2 className="intro-subtitle">
           Come with family & feel the joy of traditional Thai food
         </h2>
-        <Button
-          onClick={() => navigate("/menu")}
-          size="large"
-          ghost
-          className="view-menu-button"
-        >
-          View Our Menu
-        </Button>
+        <Helmet>
+          <script
+            src="https://www.fbgcdn.com/embedder/js/ewm2.js"
+            defer
+            async
+          ></script>
+        </Helmet>
+
+        <div className="btn-section">
+          <span
+            class="glf-button"
+            data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
+            data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
+          >
+            See MENU & Order
+          </span>
+
+          <span
+            class="glf-button reservation"
+            data-glf-cuid="afd6747a-daee-440b-9467-fd7828abebb9"
+            data-glf-ruid="ff4a659b-9414-4a61-a07e-cf40a23b1f0c"
+            data-glf-reservation="true"
+          >
+            Booking
+          </span>
+        </div>
       </div>
     </StyledBackgroundImg>
   );
@@ -46,7 +62,9 @@ const StyledBackgroundImg = styled.div`
         margin-top: 55px;
       }
     }
-
+.btn-section{
+  margin-top: 50px;
+}
     h1.intro-title {
       font-size: 50px;
     }
@@ -63,7 +81,6 @@ const StyledBackgroundImg = styled.div`
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       h1.intro-title {
         /* font-size: 10px; */
-        
       }
       .content-wrapper {
         margin-top: 20px;
