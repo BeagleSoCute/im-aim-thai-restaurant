@@ -6,13 +6,13 @@ export const staffs = [
     role: "Chef",
     description: "Chef Aim is a highly skilled and passionate culinary artist, who has dedicated her life to mastering the art of Thai cuisine to ensure that every dish she creates is an extraordinary and unforgettable experience for her guests.",
   },
-  {
-    id: 2,
-    pic: require("assets/staffs/fon.jpg"),
-    name: "Fon",
-    role: "Chef",
-    description: "Chef Fon is an extraordinary culinary talent renowned for her expertise in crafting authentic and delectable Thai cuisine. ",
-  },
+  // {
+  //   id: 2,
+  //   pic: require("assets/staffs/fon.jpg"),
+  //   name: "Fon",
+  //   role: "Chef",
+  //   description: "Chef Fon is an extraordinary culinary talent renowned for her expertise in crafting authentic and delectable Thai cuisine. ",
+  // },
 ];
 
 export const reviewers = [

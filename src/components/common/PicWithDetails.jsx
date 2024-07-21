@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Col } from "antd";
 const PicWithDetails = ({ pic, title, subtitle, description }) => {
   return (
-    <StyledCol sm={12} xl={4} className="pic-with-details">
+    <StyledCol sm={12} xl={6} className="pic-with-details">
       <img src={pic} alt={title} />
       <div className="pic-with-details-title">{title}</div>
       <div className="pic-with-details-sub-title gold-color">{subtitle}</div>
