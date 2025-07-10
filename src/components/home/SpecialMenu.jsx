@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import backgroundPic from "assets/background/gray_background.jpg";
-import specialDishImg from "assets/foods/pic44.jpg";
+import specialDishImg from "assets/foods/pic43.jpg";
 import { Row, Col, Button } from "antd";
 import { useNavigate } from "react-router-dom";
 const SpecialMenu = () => {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pic from "assets/home/pad_thai.jpg";
+import pic from "assets/home/pad_thai.png";
 const IntroSection = () => {
   return (
     <StyledBackgroundImg

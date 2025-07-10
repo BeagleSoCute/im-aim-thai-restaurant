@@ -251,7 +251,7 @@ export const menuDetails = [
 
   {
     id: 7,
-    pic: require("assets/foods/pic7.jpeg"),
+    pic: require("assets/foods/pic7.jpg"),
     name: "Satay chicken",
     amount: 4,
     type: "appetizers",
@@ -261,7 +261,8 @@ export const menuDetails = [
 
   {
     id: 8,
-    pic: require("assets/foods/pic8.jpg"),
+    // pic: require("assets/foods/pic8.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Money bag",
     amount: 5,
     type: "appetizers",
@@ -272,7 +273,7 @@ export const menuDetails = [
 
   {
     id: 9,
-    pic: require("assets/foods/pic9.jpg"),
+    pic: require("assets/foods/pic9.JPG"),
     name: "Chicken wing",
     amount: 8,
     type: "appetizers",
@@ -313,7 +314,7 @@ export const menuDetails = [
 
   {
     id: 13,
-    pic: require("assets/foods/pic13.png"),
+    pic: require("assets/foods/pic13.jpg"),
     name: "Panang curry",
     type: "curry",
     price: "",
@@ -353,7 +354,7 @@ export const menuDetails = [
 
   {
     id: 17,
-    pic: require("assets/foods/pic17.JPG"),
+    pic: require("assets/foods/pic17.jpg"),
     name: "Sweet and sour (mild)",
     type: "wok",
     price: "",
@@ -382,7 +383,8 @@ export const menuDetails = [
 
   {
     id: 20,
-    pic: require("assets/foods/pic20.jpg"),
+    // pic: require("assets/foods/pic20.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Pad prik pao (mild-medium)",
     type: "wok",
     price: "",
@@ -392,7 +394,7 @@ export const menuDetails = [
 
   {
     id: 21,
-    pic: require("assets/foods/pic21.jpg"),
+    pic: require("assets/foods/pic21.png"),
     name: "Sizzling meat",
     type: "sizzling",
     price: "",
@@ -401,7 +403,8 @@ export const menuDetails = [
 
   {
     id: 22,
-    pic: require("assets/foods/pic22.jpg"),
+    // pic: require("assets/foods/pic22.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Sizzling garlic & pepper (medium)",
     type: "sizzling",
     price: "",
@@ -431,7 +434,9 @@ export const menuDetails = [
 
   {
     id: 25,
-    pic: require("assets/foods/pic25.jpg"),
+    // pic: require("assets/foods/pic25.jpg"),
+    pic: require("assets/common/noImage.png"),
+
     name: "Yum gai zab",
     type: "thaiSalad",
     price: "23.90",
@@ -441,7 +446,8 @@ export const menuDetails = [
 
   {
     id: 26,
-    pic: require("assets/foods/pic26.jpg"),
+    // pic: require("assets/foods/pic26.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Yum tofu",
     type: "thaiSalad",
     price: "21.90",
@@ -461,7 +467,8 @@ export const menuDetails = [
 
   {
     id: 28,
-    pic: require("assets/foods/pic28.JPG"),
+    // pic: require("assets/foods/pic28.JPG"),
+    pic: require("assets/common/noImage.png"),
     name: "Deep fry prawn",
     type: "thaiSalad",
     price: "25.90",
@@ -481,7 +488,9 @@ export const menuDetails = [
 
   {
     id: 30,
-    pic: require("assets/foods/pic30.jpg"),
+    // pic: require("assets/foods/pic30.jpg"),
+    pic: require("assets/common/noImage.png"),
+
     name: "Yum pork belly",
     type: "thaiSalad",
     price: "25.90",
@@ -491,7 +500,7 @@ export const menuDetails = [
 
   {
     id: 31,
-    pic: require("assets/foods/pic31.jpg"),
+    pic: require("assets/foods/pic31.JPG"),
     name: "Yum fresh salmon",
     type: "thaiSalad",
     price: "27.90",
@@ -501,7 +510,8 @@ export const menuDetails = [
 
   {
     id: 32,
-    pic: require("assets/foods/pic32.JPG"),
+    // pic: require("assets/foods/pic32.JPG"),
+    pic: require("assets/common/noImage.png"),
     name: "Som tum thai carrot with prawn",
     type: "thaiSalad",
     price: "22.90",
@@ -528,7 +538,8 @@ export const menuDetails = [
 
   {
     id: 35,
-    pic: require("assets/foods/pic35.jpg"),
+    // pic: require("assets/foods/pic35.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Basil thai fried rice(medium)",
     type: "rice",
     price: "",
@@ -547,7 +558,9 @@ export const menuDetails = [
 
   {
     id: 37,
-    pic: require("assets/foods/pic37.jpg"),
+    // pic: require("assets/foods/pic37.jpg"),
+    pic: require("assets/common/noImage.png"),
+
     noChoiceOfMeat: true,
     name: "Basil fried rice pork belly",
     type: "rice",
@@ -616,7 +629,8 @@ export const menuDetails = [
   {
     id: 44,
     noChoiceOfMeat: true,
-    pic: require("assets/foods/pic44.jpg"),
+    // pic: require("assets/foods/pic44.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Green curry salmon",
     type: "signatureDishes",
     price: "28.90",
@@ -658,7 +672,9 @@ export const menuDetails = [
   {
     id: 48,
     noChoiceOfMeat: true,
-    pic: require("assets/foods/pic48.jpg"),
+    // pic: require("assets/foods/pic48.jpg"),
+    pic: require("assets/common/noImage.png"),
+
     name: "Pork belly on rice side with vegetables",
     type: "signatureDishes",
     price: "24.90",
@@ -669,7 +685,8 @@ export const menuDetails = [
   {
     id: 49,
     noChoiceOfMeat: true,
-    pic: require("assets/foods/pic49.jpg"),
+    // pic: require("assets/foods/pic49.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Hainanese chicken on ginger rice",
     type: "signatureDishes",
     price: "22.90",
@@ -678,7 +695,8 @@ export const menuDetails = [
 
   {
     id: 50,
-    pic: require("assets/foods/pic50.jpg"),
+    // pic: require("assets/foods/pic50.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Hokkian noodle with green or red curry",
     type: "signatureDishes",
     price: "",
@@ -697,7 +715,8 @@ export const menuDetails = [
 
   {
     id: 52,
-    pic: require("assets/foods/pic55.jpg"),
+    // pic: require("assets/foods/pic55.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Waffle with ice-cream",
     type: "dessert",
     price: "12.00",
@@ -705,7 +724,8 @@ export const menuDetails = [
   },
   {
     id: 53,
-    pic: require("assets/foods/pic53.jpg"),
+    // pic: require("assets/foods/pic53.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "ice-cream sundae",
     type: "dessert",
     price: "10.00",
@@ -715,7 +735,8 @@ export const menuDetails = [
 
   {
     id: 54,
-    pic: require("assets/foods/pic54.jpg"),
+    // pic: require("assets/foods/pic54.jpg"),
+    pic: require("assets/common/noImage.png"),
     name: "Brownie with ice-cream",
     type: "dessert",
     price: "12.00",
@@ -783,7 +804,8 @@ export const menuTypes = [
     id: 10,
     type: "signatureDishes",
     label: "Signature Dishes",
-    pic: require("assets/foods/pic44.jpg"),
+    // pic: require("assets/foods/pic44.jpg"),
+    pic: require("assets/common/noImage.png"),
   },
 ];
 
