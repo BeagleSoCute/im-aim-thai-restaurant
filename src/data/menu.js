@@ -273,7 +273,7 @@ export const menuDetails = [
 
   {
     id: 9,
-    pic: require("assets/foods/pic9.JPG"),
+    pic: require("assets/foods/pic9.jpg"),
     name: "Chicken wing",
     amount: 8,
     type: "appetizers",
@@ -467,7 +467,7 @@ export const menuDetails = [
 
   {
     id: 28,
-    // pic: require("assets/foods/pic28.JPG"),
+    // pic: require("assets/foods/pic28.jpg"),
     pic: require("assets/common/noImage.png"),
     name: "Deep fry prawn",
     type: "thaiSalad",
@@ -500,7 +500,7 @@ export const menuDetails = [
 
   {
     id: 31,
-    pic: require("assets/foods/pic31.JPG"),
+    pic: require("assets/foods/pic31.jpg"),
     name: "Yum fresh salmon",
     type: "thaiSalad",
     price: "27.90",
@@ -510,7 +510,7 @@ export const menuDetails = [
 
   {
     id: 32,
-    // pic: require("assets/foods/pic32.JPG"),
+    // pic: require("assets/foods/pic32.jpg"),
     pic: require("assets/common/noImage.png"),
     name: "Som tum thai carrot with prawn",
     type: "thaiSalad",
