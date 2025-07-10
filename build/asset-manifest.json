@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ac88f107.css",
-    "main.js": "/static/js/main.978ec37f.js",
+    "main.js": "/static/js/main.dee26534.js",
     "static/media/pic5.jpg": "/static/media/pic5.ea59e64b2a2a7b0d124b.jpg",
     "static/media/pic17.jpg": "/static/media/pic17.55558c48e044f69d3a7f.jpg",
     "static/media/pad_thai.png": "/static/media/pad_thai.834ca26add5bc61f7f2d.png",
@@ -30,7 +30,7 @@
     "static/media/pic27.jpg": "/static/media/pic27.d394c7f76422d8237c97.jpg",
     "static/media/pic24.jpg": "/static/media/pic24.89e03db176c3fabf5884.jpg",
     "static/media/pic43.jpg": "/static/media/pic43.70c56ee3fda73851cd97.jpg",
-    "static/media/pic31.JPG": "/static/media/pic31.eff9c33fc9114198696f.JPG",
+    "static/media/pic31.jpg": "/static/media/pic31.eff9c33fc9114198696f.jpg",
     "static/media/pic13.jpg": "/static/media/pic13.2fbaadf322337dcfb1e0.jpg",
     "static/media/pic40.jpg": "/static/media/pic40.318451356594aaf15266.jpg",
     "static/media/pic34.jpg": "/static/media/pic34.19ab65150c60444219a7.jpg",
@@ -49,7 +49,7 @@
     "static/media/pic11.jpg": "/static/media/pic11.78655e1aabc615402e23.jpg",
     "static/media/pic3.jpg": "/static/media/pic3.dd17ba94429c831e1301.jpg",
     "static/media/fried_chicken.jpg": "/static/media/fried_chicken.def9ef4e277af3703de2.jpg",
-    "static/media/pic9.JPG": "/static/media/pic9.def9ef4e277af3703de2.JPG",
+    "static/media/pic9.jpg": "/static/media/pic9.def9ef4e277af3703de2.jpg",
     "static/media/pic7.jpg": "/static/media/pic7.d2cbeef2d353d1fae059.jpg",
     "static/media/pic52.jpg": "/static/media/pic52.3363cc1703bb5087be67.jpg",
     "static/media/pic10.jpg": "/static/media/pic10.ab2fc9f07712d40b25ff.jpg",
@@ -77,10 +77,10 @@
     "static/media/gmail.png": "/static/media/gmail.a2f2146f929409405da0.png",
     "index.html": "/index.html",
     "main.ac88f107.css.map": "/static/css/main.ac88f107.css.map",
-    "main.978ec37f.js.map": "/static/js/main.978ec37f.js.map"
+    "main.dee26534.js.map": "/static/js/main.dee26534.js.map"
   },
   "entrypoints": [
     "static/css/main.ac88f107.css",
-    "static/js/main.978ec37f.js"
+    "static/js/main.dee26534.js"
   ]
 }
