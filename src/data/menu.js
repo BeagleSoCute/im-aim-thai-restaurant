@@ -354,7 +354,9 @@ export const menuDetails = [
 
   {
     id: 17,
-    pic: require("assets/foods/pic17.jpg"),
+    // pic: require("assets/foods/pic17.jpg"),
+        pic: require("assets/common/noImage.png"),
+
     name: "Sweet and sour (mild)",
     type: "wok",
     price: "",
