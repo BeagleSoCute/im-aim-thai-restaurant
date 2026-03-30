@@ -42,31 +42,31 @@ export const choiceOf2 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "15.00",
+    price: "17.90",
   },
   {
     id: 2,
     icon: require("assets/icon/vegetable.png"),
     label: "Vegetable",
-    price: "13.50",
+    price: "15.90",
   },
   {
     id: 3,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
-    price: "14.00",
+    price: "16.90",
   },
   {
     id: 4,
     icon: require("assets/icon/seafood.png"),
     label: "Mix Seafood",
-    price: "15.50",
+    price: "18.90",
   },
   {
     id: 5,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
-    price: "15.50",
+    price: "17.90",
   },
 ];
 
@@ -75,55 +75,55 @@ export const choiceOf3 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 4,
     icon: require("assets/icon/duck.png"),
     label: "Duck",
-    price: "26.90",
+    price: "28.90",
   },
   {
     id: 5,
     icon: require("assets/icon/fish.png"),
     label: "Fish Fillets or Squid",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 6,
     icon: require("assets/icon/seafood.png"),
     label: "Mixed Seafood",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 7,
     icon: require("assets/icon/fried-shrimp.png"),
     label: "Prawn Cutlets",
-    price: "25.90",
+    price: "27.90",
   },
   {
     id: 8,
     icon: require("assets/icon/vegetable.png"),
     label: "Vegtable",
-    price: "20.00",
+    price: "23.00",
   },
   {
     id: 9,
     icon: require("assets/icon/tofu.png"),
     label: "Vegtable & Tofu",
-    price: "20.50",
+    price: "23.90",
   },
 ];
 
@@ -216,7 +216,7 @@ export const menuDetails = [
     name: "Spring roll",
     amount: 4,
     type: "appetizers",
-    price: "10.00",
+    price: "12.50",
     description: "Vegetables, Rice vermicelli",
   },
 
@@ -225,7 +225,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic4.jpg"),
     name: "Deep fry tofu",
     type: "appetizers",
-    price: "10.00",
+    price: "12.50",
     description: "Tofu with sweet chilli sauce & crushed peanut",
   },
 
@@ -235,7 +235,7 @@ export const menuDetails = [
     name: "Pastry prawn",
     amount: 4,
     type: "appetizers",
-    price: "11.00",
+    price: "13.50",
     description: "Deep fry prawn pastry with sweet chili sauce",
   },
 
@@ -245,7 +245,7 @@ export const menuDetails = [
     name: "Curry puff",
     amount: 4,
     type: "appetizers",
-    price: "12.00",
+    price: "14.50",
     description: "Mince chicken with curry paste, potato, Onion",
   },
 
@@ -255,7 +255,7 @@ export const menuDetails = [
     name: "Satay chicken",
     amount: 4,
     type: "appetizers",
-    price: "12.00",
+    price: "15.00",
     description: " Thai BBQ chickenwith satay sauce",
   },
 
@@ -266,7 +266,7 @@ export const menuDetails = [
     name: "Money bag",
     amount: 5,
     type: "appetizers",
-    price: "11.00",
+    price: "13.50",
     description:
       "Wonton pastry fill with mince chicken with mix vegetables and onion",
   },
@@ -277,7 +277,7 @@ export const menuDetails = [
     name: "Chicken wing",
     amount: 8,
     type: "appetizers",
-    price: "15.00",
+    price: "19.00",
     description: "Chicken wing 8 piece coated with bbq sauce",
   },
 
@@ -287,7 +287,7 @@ export const menuDetails = [
     name: "Mixed appetizers",
     amount: 5,
     type: "appetizers",
-    price: "14.00",
+    price: "16.50",
     description:
       " Mixed appetizers 5 pcs (spring roll, money bag, puff, satay, pastry prawn)",
   },
