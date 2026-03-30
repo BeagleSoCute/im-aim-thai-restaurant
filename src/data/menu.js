@@ -3,37 +3,37 @@ export const choiceOf1 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 4,
     icon: require("assets/icon/duck.png"),
     label: "Duck",
-    price: "26.90",
+    price: "28.90",
   },
   {
     id: 5,
     icon: require("assets/icon/seafood.png"),
     label: "Sea food",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 6,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
-    price: "25.90",
+    price: "27.90",
   },
 ];
 
@@ -133,35 +133,35 @@ export const choiceOf4 = [
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
     value: 1,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
     value: 2,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
     value: 3,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 4,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
     value: 4,
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 5,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
     value: 5,
-    price: "18.90",
+    price: "21.90",
   },
 ];
 
@@ -429,7 +429,7 @@ export const menuDetails = [
     name: "Sizzling vegetables only with cashewnut",
     noChoiceOfMeat: true,
     type: "sizzling",
-    price: "20.00",
+    price: "23.00",
     description:
       "Stir fried chili soybean oil with vegetables, mushroom, capsicum, baby corn top with cashew nut",
   },
@@ -441,7 +441,7 @@ export const menuDetails = [
 
     name: "Yum gai zab",
     type: "thaiSalad",
-    price: "23.90",
+    price: "26.90",
     description:
       "Deep fry chicken with red onion, Chilli, Lemon, Lemon juice, Coriander,Spring onion, Tomato, blend ground rice, Chilli powder",
   },
@@ -452,7 +452,7 @@ export const menuDetails = [
     pic: require("assets/common/noImage.png"),
     name: "Yum tofu",
     type: "thaiSalad",
-    price: "21.90",
+    price: "23.90",
     description:
       "Deep fried tofu with red onion, Chilli, Lemon juice, Coriander, Spring Onion, Tomato, bean sprout, and thai herb",
   },
@@ -462,7 +462,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic27.jpg"),
     name: "Namtok (chicken,  beef, pork)",
     type: "thaiSalad",
-    price: "22.90",
+    price: "24.90",
     description:
       "Meat mixed with blend roasted ground rice, Chilli powder, Onion, Spring onion, Coriander, and thai herb",
   },
@@ -483,7 +483,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic29.jpg"),
     name: "Yum thalay tord",
     type: "thaiSalad",
-    price: "25.90",
+    price: "28.90",
     description:
       "Deep fry seafood mix with lemon juice, Chilli, Red onion, Spring Onion, Coriander, Top with cashew nut",
   },
@@ -495,7 +495,7 @@ export const menuDetails = [
 
     name: "Yum pork belly",
     type: "thaiSalad",
-    price: "25.90",
+    price: "27.90",
     description:
       "Chili, Garlic, pork belly with yum sauce, Salad dressing, Red onion,, coriander, tomato, Cucumber, Spring onion",
   },
@@ -505,7 +505,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic31.jpg"),
     name: "Yum fresh salmon",
     type: "thaiSalad",
-    price: "27.90",
+    price: "30.90",
     description:
       "chili, garlic, fresh salmon with yum sauce, red onion, ,coriander, spring onion, tomato, carrot",
   },
@@ -516,7 +516,7 @@ export const menuDetails = [
     pic: require("assets/common/noImage.png"),
     name: "Som tum thai carrot with prawn",
     type: "thaiSalad",
-    price: "22.90",
+    price: "24.90",
     description: "carrot with prawn, peanut, tomato, bean, garlic, chili",
   },
 
@@ -566,7 +566,7 @@ export const menuDetails = [
     noChoiceOfMeat: true,
     name: "Basil fried rice pork belly",
     type: "rice",
-    price: "20.90",
+    price: "26.90",
     description: "Onion, Bean, MIX Vegetables Basil Sauce",
   },
 
@@ -635,7 +635,7 @@ export const menuDetails = [
     pic: require("assets/common/noImage.png"),
     name: "Green curry salmon",
     type: "signatureDishes",
-    price: "28.90",
+    price: "30.90",
     description:
       "Green curry with salmon, vegetables, bamboo shoot, capsicum, bean, mixed veg",
   },
@@ -646,7 +646,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic45.jpg"),
     name: "Deep fry chicken with garlic & pepper sauce",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description:
       "Deep fried chicken with garlic and black pepper sauce and vegetables",
   },
@@ -657,7 +657,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic46.jpg"),
     name: "Greilled salmon with basil sauce",
     type: "signatureDishes",
-    price: "28.90",
+    price: "30.90",
     description: "Grilled salmon top with basil sauce, base with vegetables",
   },
 
@@ -667,7 +667,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic47.jpg"),
     name: "Duck on rice side with vegetables",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description: "Duck on rice top with special sauce with vegetables on side",
   },
 
@@ -679,7 +679,7 @@ export const menuDetails = [
 
     name: "Pork belly on rice side with vegetables",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description:
       "Pork belly on rice top with special sauce with vegetables on side",
   },
