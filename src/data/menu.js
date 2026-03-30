@@ -3,37 +3,37 @@ export const choiceOf1 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 4,
     icon: require("assets/icon/duck.png"),
     label: "Duck",
-    price: "26.90",
+    price: "28.90",
   },
   {
     id: 5,
     icon: require("assets/icon/seafood.png"),
     label: "Sea food",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 6,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
-    price: "25.90",
+    price: "27.90",
   },
 ];
 
@@ -42,31 +42,31 @@ export const choiceOf2 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "15.00",
+    price: "17.90",
   },
   {
     id: 2,
     icon: require("assets/icon/vegetable.png"),
     label: "Vegetable",
-    price: "13.50",
+    price: "15.90",
   },
   {
     id: 3,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
-    price: "14.00",
+    price: "16.90",
   },
   {
     id: 4,
     icon: require("assets/icon/seafood.png"),
     label: "Mix Seafood",
-    price: "15.50",
+    price: "18.90",
   },
   {
     id: 5,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
-    price: "15.50",
+    price: "17.90",
   },
 ];
 
@@ -75,55 +75,55 @@ export const choiceOf3 = [
     id: 1,
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 4,
     icon: require("assets/icon/duck.png"),
     label: "Duck",
-    price: "26.90",
+    price: "28.90",
   },
   {
     id: 5,
     icon: require("assets/icon/fish.png"),
     label: "Fish Fillets or Squid",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 6,
     icon: require("assets/icon/seafood.png"),
     label: "Mixed Seafood",
-    price: "24.90",
+    price: "27.90",
   },
   {
     id: 7,
     icon: require("assets/icon/fried-shrimp.png"),
     label: "Prawn Cutlets",
-    price: "25.90",
+    price: "27.90",
   },
   {
     id: 8,
     icon: require("assets/icon/vegetable.png"),
     label: "Vegtable",
-    price: "20.00",
+    price: "23.00",
   },
   {
     id: 9,
     icon: require("assets/icon/tofu.png"),
     label: "Vegtable & Tofu",
-    price: "20.50",
+    price: "23.90",
   },
 ];
 
@@ -133,35 +133,35 @@ export const choiceOf4 = [
     icon: require("assets/icon/chicken.png"),
     label: "Chicken",
     value: 1,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 2,
     icon: require("assets/icon/beef.png"),
     label: "Beef",
     value: 2,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 3,
     icon: require("assets/icon/pork.png"),
     label: "Pork",
     value: 3,
-    price: "20.90",
+    price: "23.50",
   },
   {
     id: 4,
     icon: require("assets/icon/shrimp.png"),
     label: "Prawn",
     value: 4,
-    price: "22.90",
+    price: "25.90",
   },
   {
     id: 5,
     icon: require("assets/icon/tofu.png"),
     label: "Vegetable & Tofu",
     value: 5,
-    price: "18.90",
+    price: "21.90",
   },
 ];
 
@@ -216,7 +216,7 @@ export const menuDetails = [
     name: "Spring roll",
     amount: 4,
     type: "appetizers",
-    price: "10.00",
+    price: "12.50",
     description: "Vegetables, Rice vermicelli",
   },
 
@@ -225,7 +225,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic4.jpg"),
     name: "Deep fry tofu",
     type: "appetizers",
-    price: "10.00",
+    price: "12.50",
     description: "Tofu with sweet chilli sauce & crushed peanut",
   },
 
@@ -235,7 +235,7 @@ export const menuDetails = [
     name: "Pastry prawn",
     amount: 4,
     type: "appetizers",
-    price: "11.00",
+    price: "13.50",
     description: "Deep fry prawn pastry with sweet chili sauce",
   },
 
@@ -245,7 +245,7 @@ export const menuDetails = [
     name: "Curry puff",
     amount: 4,
     type: "appetizers",
-    price: "12.00",
+    price: "14.50",
     description: "Mince chicken with curry paste, potato, Onion",
   },
 
@@ -255,7 +255,7 @@ export const menuDetails = [
     name: "Satay chicken",
     amount: 4,
     type: "appetizers",
-    price: "12.00",
+    price: "15.00",
     description: " Thai BBQ chickenwith satay sauce",
   },
 
@@ -266,7 +266,7 @@ export const menuDetails = [
     name: "Money bag",
     amount: 5,
     type: "appetizers",
-    price: "11.00",
+    price: "13.50",
     description:
       "Wonton pastry fill with mince chicken with mix vegetables and onion",
   },
@@ -277,7 +277,7 @@ export const menuDetails = [
     name: "Chicken wing",
     amount: 8,
     type: "appetizers",
-    price: "15.00",
+    price: "19.00",
     description: "Chicken wing 8 piece coated with bbq sauce",
   },
 
@@ -287,7 +287,7 @@ export const menuDetails = [
     name: "Mixed appetizers",
     amount: 5,
     type: "appetizers",
-    price: "14.00",
+    price: "16.50",
     description:
       " Mixed appetizers 5 pcs (spring roll, money bag, puff, satay, pastry prawn)",
   },
@@ -429,7 +429,7 @@ export const menuDetails = [
     name: "Sizzling vegetables only with cashewnut",
     noChoiceOfMeat: true,
     type: "sizzling",
-    price: "20.00",
+    price: "23.00",
     description:
       "Stir fried chili soybean oil with vegetables, mushroom, capsicum, baby corn top with cashew nut",
   },
@@ -441,7 +441,7 @@ export const menuDetails = [
 
     name: "Yum gai zab",
     type: "thaiSalad",
-    price: "23.90",
+    price: "26.90",
     description:
       "Deep fry chicken with red onion, Chilli, Lemon, Lemon juice, Coriander,Spring onion, Tomato, blend ground rice, Chilli powder",
   },
@@ -452,7 +452,7 @@ export const menuDetails = [
     pic: require("assets/common/noImage.png"),
     name: "Yum tofu",
     type: "thaiSalad",
-    price: "21.90",
+    price: "23.90",
     description:
       "Deep fried tofu with red onion, Chilli, Lemon juice, Coriander, Spring Onion, Tomato, bean sprout, and thai herb",
   },
@@ -462,7 +462,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic27.jpg"),
     name: "Namtok (chicken,  beef, pork)",
     type: "thaiSalad",
-    price: "22.90",
+    price: "24.90",
     description:
       "Meat mixed with blend roasted ground rice, Chilli powder, Onion, Spring onion, Coriander, and thai herb",
   },
@@ -471,7 +471,7 @@ export const menuDetails = [
     id: 28,
     // pic: require("assets/foods/pic28.jpg"),
     pic: require("assets/common/noImage.png"),
-    name: "Deep fry prawn",
+    name: "Deep fry prawn salad",
     type: "thaiSalad",
     price: "25.90",
     description:
@@ -483,7 +483,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic29.jpg"),
     name: "Yum thalay tord",
     type: "thaiSalad",
-    price: "25.90",
+    price: "28.90",
     description:
       "Deep fry seafood mix with lemon juice, Chilli, Red onion, Spring Onion, Coriander, Top with cashew nut",
   },
@@ -495,7 +495,7 @@ export const menuDetails = [
 
     name: "Yum pork belly",
     type: "thaiSalad",
-    price: "25.90",
+    price: "27.90",
     description:
       "Chili, Garlic, pork belly with yum sauce, Salad dressing, Red onion,, coriander, tomato, Cucumber, Spring onion",
   },
@@ -505,7 +505,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic31.jpg"),
     name: "Yum fresh salmon",
     type: "thaiSalad",
-    price: "27.90",
+    price: "30.90",
     description:
       "chili, garlic, fresh salmon with yum sauce, red onion, ,coriander, spring onion, tomato, carrot",
   },
@@ -514,9 +514,9 @@ export const menuDetails = [
     id: 32,
     // pic: require("assets/foods/pic32.jpg"),
     pic: require("assets/common/noImage.png"),
-    name: "Som tum thai carrot with prawn",
+    name: "Somtum carrot",
     type: "thaiSalad",
-    price: "22.90",
+    price: "24.90",
     description: "carrot with prawn, peanut, tomato, bean, garlic, chili",
   },
 
@@ -566,7 +566,7 @@ export const menuDetails = [
     noChoiceOfMeat: true,
     name: "Basil fried rice pork belly",
     type: "rice",
-    price: "20.90",
+    price: "26.90",
     description: "Onion, Bean, MIX Vegetables Basil Sauce",
   },
 
@@ -635,7 +635,7 @@ export const menuDetails = [
     pic: require("assets/common/noImage.png"),
     name: "Green curry salmon",
     type: "signatureDishes",
-    price: "28.90",
+    price: "30.90",
     description:
       "Green curry with salmon, vegetables, bamboo shoot, capsicum, bean, mixed veg",
   },
@@ -646,7 +646,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic45.jpg"),
     name: "Deep fry chicken with garlic & pepper sauce",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description:
       "Deep fried chicken with garlic and black pepper sauce and vegetables",
   },
@@ -657,7 +657,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic46.jpg"),
     name: "Greilled salmon with basil sauce",
     type: "signatureDishes",
-    price: "28.90",
+    price: "30.90",
     description: "Grilled salmon top with basil sauce, base with vegetables",
   },
 
@@ -667,7 +667,7 @@ export const menuDetails = [
     pic: require("assets/foods/pic47.jpg"),
     name: "Duck on rice side with vegetables",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description: "Duck on rice top with special sauce with vegetables on side",
   },
 
@@ -679,7 +679,7 @@ export const menuDetails = [
 
     name: "Pork belly on rice side with vegetables",
     type: "signatureDishes",
-    price: "24.90",
+    price: "26.90",
     description:
       "Pork belly on rice top with special sauce with vegetables on side",
   },
@@ -743,6 +743,126 @@ export const menuDetails = [
     type: "dessert",
     price: "12.00",
     description: "Brownie with ice-cream side with whip cream.",
+  },
+  {
+    id: 55,
+    pic: require("assets/common/noImage.png"),
+    name: "Thai beef salad",
+    type: "thaiSalad",
+    price: "24.90",
+    description: "Traditional Thai beef salad with herbs and lime dressing",
+  },
+  {
+    id: 56,
+    pic: require("assets/common/noImage.png"),
+    name: "Caramari",
+    type: "western",
+    price: "16.50",
+    description: "Fried calamari with dipping sauce",
+  },
+  {
+    id: 57,
+    pic: require("assets/common/noImage.png"),
+    name: "Pork belly w chip",
+    type: "western",
+    price: "26.90",
+    description: "Crispy pork belly served with chips",
+  },
+  {
+    id: 58,
+    pic: require("assets/common/noImage.png"),
+    name: "BBQ Rib w wedges",
+    type: "western",
+    price: "30.90",
+    description: "BBQ ribs served with wedges",
+  },
+  {
+    id: 59,
+    pic: require("assets/common/noImage.png"),
+    name: "Wedges",
+    type: "western",
+    price: "14.00",
+    description: "Seasoned potato wedges",
+  },
+  {
+    id: 60,
+    pic: require("assets/common/noImage.png"),
+    name: "Chip",
+    type: "western",
+    price: "8.00",
+    description: "French fries",
+  },
+  {
+    id: 61,
+    pic: require("assets/common/noImage.png"),
+    name: "Garlic bread",
+    type: "western",
+    price: "9.00",
+    description: "Toasted bread with garlic butter",
+  },
+  {
+    id: 62,
+    pic: require("assets/common/noImage.png"),
+    name: "Gambas",
+    type: "western",
+    price: "20.90",
+    description: "Spanish style garlic prawns",
+  },
+  {
+    id: 63,
+    pic: require("assets/common/noImage.png"),
+    name: "Nugget w chip",
+    type: "kids",
+    price: "15.00",
+    description: "Chicken nuggets with chips",
+  },
+  {
+    id: 64,
+    pic: require("assets/common/noImage.png"),
+    name: "Chicken finger w chip",
+    type: "kids",
+    price: "16.00",
+    description: "Chicken fingers with chips",
+  },
+  {
+    id: 65,
+    pic: require("assets/common/noImage.png"),
+    name: "Chip",
+    type: "kids",
+    price: "8.00",
+    description: "French fries",
+  },
+  {
+    id: 66,
+    pic: require("assets/common/noImage.png"),
+    name: "Deep fry prawn salad",
+    type: "kids",
+    price: "16.00",
+    description: "Fried prawns with salad",
+  },
+  {
+    id: 67,
+    pic: require("assets/common/noImage.png"),
+    name: "Butter fry rice ck",
+    type: "kids",
+    price: "17.00",
+    description: "Fried rice with chicken and butter",
+  },
+  {
+    id: 68,
+    pic: require("assets/common/noImage.png"),
+    name: "Ck satay w rice n vege",
+    type: "kids",
+    price: "17.00",
+    description: "Chicken satay with rice and vegetables",
+  },
+  {
+    id: 69,
+    pic: require("assets/common/noImage.png"),
+    name: "Chicken wing w chip",
+    type: "kids",
+    price: "19.00",
+    description: "Chicken wings with chips",
   },
 ];
 
@@ -809,6 +929,18 @@ export const menuTypes = [
     // pic: require("assets/foods/pic44.jpg"),
     pic: require("assets/common/noImage.png"),
   },
+  {
+    id: 11,
+    type: "western",
+    label: "Western Menu",
+    pic: require("assets/common/noImage.png"),
+  },
+  {
+    id: 12,
+    type: "kids",
+    label: "Kids Menu",
+    pic: require("assets/common/noImage.png"),
+  },
 ];
 
 export const showMenuTypes = [
@@ -817,7 +949,7 @@ export const showMenuTypes = [
 ];
 
 export const menuChoiceOf = {
-  sizzling: choiceOf1,
+  sizzling: choiceOf3,
   soup: choiceOf2,
   curry: choiceOf3,
   wok: choiceOf3,
